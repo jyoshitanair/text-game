@@ -17,18 +17,20 @@ func _process(delta: float) -> void:
 		elapsed_time += delta
 	#moving
 	if Input.is_action_just_pressed("down"):
-		if pointer.position == Vector2(-138.0,40.0):
-			pointer.position = Vector2(-138.0,138.0)
+		if pointer.position == Vector2(-80,40.0):
+			pointer.position = Vector2(-80,138.0)
 			pointer_position = 2
-		elif pointer.position == Vector2(-138.0,138.0):
-			pointer.position = Vector2(-138.0,236.0)
+		elif pointer.position == Vector2(-80,138.0):
+			pointer.position = Vector2(-80,236.0)
 			pointer_position = 3
 		else:
-			pointer.position = Vector2(-138.0,40.0)
+			pointer.position = Vector2(-80,40.0)
 			pointer_position = 1
 	if Input.is_action_just_pressed("enter"):
 		if pointer_position == 1 :
-			get_tree().change_scene_to_file("res://scenes/dialog.tscn")
+			Manager.next_scene_in_queue = "res://scenes/dialog.tscn"
+			get_tree().change_scene_to_file("res://scenes/loading.tscn")
 		if pointer_position == 2:
-			get_tree().change_scene_to_file("res://scenes/settings.tscn")
+			Manager.next_scene_in_queue = "res://scenes/settings.tscn"
+			get_tree().change_scene_to_file("res://scenes/loading.tscn")
 			

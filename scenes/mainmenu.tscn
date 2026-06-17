@@ -129,6 +129,6 @@ theme_override_font_sizes/font_size = 40
 text = "???"
 
 [node name="pointer" type="Polygon2D" parent="." unique_id=222991462]
-position = Vector2(-138, 40)
+position = Vector2(-80, 40)
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)

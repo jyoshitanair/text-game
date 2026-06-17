@@ -1,6 +1,12 @@
 extends Node2D
 @onready var fade: ColorRect = $ColorRect2
 @onready var main_text: RichTextLabel = $Label2
+@onready var pointer: Polygon2D = $choices/pointer
+@onready var choices: Node2D = $choices
+@export var path1: String
+@export var path2: String
+var pointer_position = 1
+var normal_type = true
 var tween_type
 var type_finished
 var text_array_index = 0 
@@ -19,17 +25,34 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("enter"):
-		if type_finished:
-			text_array_index += 1
-			if text_array_index >=text_array.size():
-				text_array_index = 0
-			main_text.text= text_array[text_array_index]
-			typeity_type()
+		if normal_type:
+			if not type_finished:
+				if tween_type:
+					tween_type.kill()
+				main_text.visible_characters = main_text.text.length()
+				type_finished =true
+			else:
+				text_array_index += 1
+				print(text_array_index)
+				if text_array_index >= text_array.size():
+					print("FULL")
+					normal_type = false 	
+					choices.show()
+					return
+				main_text.text= text_array[text_array_index]
+				typeity_type()
 		else:
-			if tween_type:
-				tween_type.kill()
-			main_text.visible_characters = main_text.text.length()
-			type_finished =true
+			if pointer_position == 1 :
+				get_tree().change_scene_to_file(path1)
+			if pointer_position == 2:
+				get_tree().change_scene_to_file(path2)
+	if Input.is_action_just_pressed("down") and normal_type == false:
+		if pointer.position == Vector2(1481.0,40.0):
+			pointer.position = Vector2(1481.0,138.0)
+			pointer_position = 2
+		elif pointer.position == Vector2(1481.0,138.0):
+			pointer.position = Vector2(1481.0,40.0)
+			pointer_position = 1
 func typeity_type() -> void: 
 	type_finished = false
 	main_text.visible_characters = 0 
