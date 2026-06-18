@@ -12,11 +12,17 @@ var can_move= false
 var visible_characters = null 
 var total_type_time = null 
 var urname = "silly kitty"
+var music
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
+	music = AudioStreamPlayer.new()
+	add_child(music)
+	music.autoplay = false
+	music.stream = preload("res://peakmusic/outlawcreative-you-call-it-chaos-i-call-it-grace-392666.mp3")
+	music.play()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if music and !music.playing:
+		print("moosic")
+		music.play()
+	

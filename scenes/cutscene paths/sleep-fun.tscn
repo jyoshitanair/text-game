@@ -5,7 +5,7 @@
 
 [node name="SleepFun" type="Node2D" unique_id=251116093]
 script = ExtResource("1_puane")
-path1 = "res://scenes/cutscene paths/no-birdwatching.tscn"
+path1 = "res://scenes/cutscene paths/reject-sleep.tscn"
 path2 = "res://scenes/cutscene paths/join-sleep.tscn"
 text_array = ["no way....", "me too! okay then.. let's go take a nap", "i know a super nice sunny spot. ", "...since you're cool you can come too"]
 

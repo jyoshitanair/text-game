@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_fuoay"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_fjmhx"]
 
-[node name="RejectSleep" type="Node2D" unique_id=1745778292]
+[node name="RejectSleep" type="Node2D" unique_id=1745778292 groups=["ending"]]
 script = ExtResource("1_fuoay")
+path1 = "res://scenes/slots.tscn"
+path2 = "res://scenes/slots.tscn"
 text_array = ["i take that back. you're just a party pooper!", "always saying no no no ", "honestly you're just so annoying! why did human pick YOU?!", "---", "He starts to get mad. like really mad.", "the two get into a big fight.", "MEEEOOWOWWWOWOW"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1550619984]

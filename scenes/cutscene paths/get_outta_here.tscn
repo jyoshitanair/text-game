@@ -5,6 +5,8 @@
 
 [node name="GetOuttaHere" type="Node2D" unique_id=204050655]
 script = ExtResource("1_ej8fb")
+path1 = "res://scenes/cutscene paths/cross-the-street.tscn"
+path2 = "res://scenes/cutscene paths/climb-up-tree.tscn"
 text_array = ["alright we're outside now!", "okay okay this is so cool. look at the birds...and the butterflies", "what should we do first!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=2047509646]

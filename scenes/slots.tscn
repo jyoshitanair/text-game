@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bqewtv3evlmym"]
+
+[ext_resource type="FontFile" uid="uid://5xoid7wdge1y" path="res://fonts/CodeRider-q2qVq.otf" id="1_bvatn"]
+
+[node name="Slots" type="Node2D" unique_id=191810732]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=683096886]
+offset_left = -72.0
+offset_top = -75.0
+offset_right = 1225.0
+offset_bottom = 735.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=897036006]
+offset_left = 75.0
+offset_top = 30.0
+offset_right = 1108.0
+offset_bottom = 95.0
+theme_override_fonts/font = ExtResource("1_bvatn")
+theme_override_font_sizes/font_size = 42
+text = "Endings Found:"

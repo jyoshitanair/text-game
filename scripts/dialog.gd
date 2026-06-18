@@ -13,11 +13,13 @@ var type_finished
 var text_array_index = 0 
 var can_move= false
 var total_type_time = null
-var ending= false
+var ending= false 
 @export var text_array = ["no","sjkfjladjhkjhjkkhjhjkhjkhhjhjhkhjhkjf","ksjdlkfjslf"]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if self.name == "RejectSleep":
+	if text_array[2] == "FAHHHH":
+		text_array[2] = "... %s? ........ %s!!!!! No wake up please!"%[Manager.urname,(Manager.urname).to_upper()]
+	if self.is_in_group("ending"):
 		ending = true
 	pointer_position = Manager.pointer_position
 	if pointer_position ==1:
@@ -173,6 +175,22 @@ func _process(delta: float) -> void:
 ⠀⠀⠀⠀⠀⠙⢷⣄⠀⢫⠘⡄⢀⡞⡝⡰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠁⠒⠒⠊⢁⡴⠋⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠉⠻⢦⣧⡘⢾⣜⠰⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠉⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠳⠿⢤⣌⣀⣀⣀⣀⣀⣠⡤⠤⠖⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+					if text_array_index==2 and self.name == "CrossTheStreet":
+						cat.text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠤⠤⠶⠤⠤⠤⠤⠤⠤⠤⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣀⡠⠤⠒⠲⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣈⣉⣲⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣠⠖⠋⠁⢀⣠⡤⠶⢶⠖⣲⣶⣶⣦⣄⡀⠀⣀⣠⣤⣴⣶⣾⣿⣭⣍⡁⠈⠙⠦⣝⢦⣀⡄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣜⣇⢀⣴⠟⠈⠙⠲⢤⣼⠠⢸⣿⣿⣿⣿⣿⣆⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢶⣬⣷⣿⠷⡼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⠋⣀⡀⠉⡑⠂⠤⣀⡀⠈⠉⠛⠻⢿⣿⡿⠿⣿⣧⢻⣿⣿⣿⣿⣿⣿⣿⣿⠿⣀⣀⡈⣁⣀⣤⣽⡶⠠⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠘⣾⣿⣿⣆⠀⠀⠀⠀⢌⣑⠢⢄⡀⠀⠺⠷⠶⡾⣿⣧⢻⣿⣿⣿⣿⣽⣿⣿⣿⣿⡿⠿⠟⠛⠉⠁⠀⠀⠀⠈⠑⠢⢄⡀⠀⠀⠀⠀⠀
+⠀⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠢⠀⡀⠀⢨⠀⠉⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠒⢤⡀⠀⠀
+⠀⣿⣿⣿⣿⣿⡖⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⡷⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⣄⠀
+⠀⠘⢿⣿⣿⣿⣇⡀⠈⠑⠢⢄⡀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠈⠉⠒⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡀
+⠀⠀⠀⠙⠛⠛⠛⠛⠒⠤⣀⠀⠉⠒⡄⠀⠀⠀⠀⠀⠀⣠⣶⣶⣶⣄⠀⠉⠒⠤⣤⣄⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣤⣴⣶⠜⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠲⢤⣈⠀⠈⠁⠀⢠⠀⣿⣿⣿⣿⣿⣷⡄⠀⠀⠙⣿⣿⣿⡿⣿⣿⣦⡀⠀⣴⣾⣿⣿⣿⣿⣿⢿⢠⠇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⠤⣀⡈⠀⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠈⠉⠉⠉⠛⠛⠛⠛⠒⢻⣿⣿⣿⣿⣿⣿⣿⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⢿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣤⠈⣿⣿⣿⣿⣿⣿⣟⡸⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣿⣿⣿⡆⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣦⢽⣟⡿⠿⠛⠉⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠿⠿⠿⠿⠷⠶⠶⠾⠶⠶⠶⠶⠶⠶⠶⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀"
 					if text_array_index==2 and self.name == "Assistant":
 						cat.text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
@@ -208,8 +226,27 @@ func _process(delta: float) -> void:
 			else:
 				#not normal type
 				if ending: 
-					get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
-					return
+					if  self.name == "RejectSleep":
+						get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
+						return
+					if  self.name == "Who'sGonnaFeedYou":
+						get_tree().change_scene_to_file("res://scenes/endings/hungry.tscn")
+						return
+					if  self.name == "KeepSleeping":
+						get_tree().change_scene_to_file("res://scenes/endings/died-bookshelf.tscn")
+						return
+					if  self.name == "YouFirstLoser":
+						get_tree().change_scene_to_file("res://scenes/endings/happy-tree.tscn")
+						return
+					if  self.name == "i-first":
+						get_tree().change_scene_to_file("res://scenes/endings/fell-off-tree.tscn")
+						return
+					if  self.name == "CrossTheStreet":
+						get_tree().change_scene_to_file("res://scenes/endings/car crash.tscn")
+						return
+					if self.get_parent().name == "endings":
+						get_tree().change_scene_to_file("res://scenes/slots.tscn")
+						return
 				if pointer_position == 1 :
 					get_tree().change_scene_to_file(path1)
 				if pointer_position == 2:
