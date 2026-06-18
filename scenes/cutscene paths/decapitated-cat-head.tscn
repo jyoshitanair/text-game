@@ -1,3 +1,97 @@
 [gd_scene format=3 uid="uid://j051sd27h6ab"]
 
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_0adwa"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_gy5nq"]
+
 [node name="DecapitatedCatHead" type="Node2D" unique_id=751765786]
+script = ExtResource("1_0adwa")
+text_array = ["You saw WHAT?!", "yeah no no no i do not want to become a decapitated cat head", "....", "But still....don't you wonder how big the world is.", "and it looks so much nicer than this stuffy home..."]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=383554493]
+offset_left = -37.0
+offset_top = -51.0
+offset_right = 1197.0
+offset_bottom = 700.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1799916224]
+offset_left = 2.0
+offset_top = 85.0
+offset_right = 705.0
+offset_bottom = 693.0
+theme_override_fonts/font = ExtResource("2_gy5nq")
+theme_override_font_sizes/font_size = 14
+text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠠⣾⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣤⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⡿⢛⣛⠻⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⡿⠁⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠈⣿⣿⣿⣿⣤⠀⠀⠀⠀⠈⠹⣿⣿⣿⣿⣿⡿⠋⠀⠀⠈⠻⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⣿⣿⠃⠀⠀⠀⣴⣶⡄⢹⣿⣿⣿⣿⠃⢰⣶⡄⠀⠀⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⣿⣿⡆⠀⠀⠀⠹⠿⠁⣸⣿⣿⣿⣿⡀⠘⡿⠃⠀⢀⣿⣿⣿⡆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣯⣹⣿⣷⣤⣾⣿⣿⣿⣿⣿⣿⣃⣀⣀⣀⣀⠀
+⠀⠾⠿⠟⠛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⡜⣿⣿⣿⣿⣿⣿⣿⡿⠛⠋⠉⠉⠋⠀
+⠠⣤⣤⣶⡶⠿⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⣠⢣⣿⣿⣿⣿⣿⣿⡿⠛⠛⠛⠛⠷⣶⡄
+⠀⠀⠉⢀⣠⣶⠾⠟⠉⠻⢿⣿⣿⣿⣿⣿⣿⣀⡀⣒⣽⣼⣿⣿⣿⣿⠟⠛⠛⠳⢶⣦⣄⡀⠀⠀
+⠀⠀⠀⠟⠋⠁⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠁⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+
+[node name="Label2" type="RichTextLabel" parent="." unique_id=1685705088]
+offset_left = 447.0
+offset_top = 229.0
+offset_right = 1080.0
+offset_bottom = 348.0
+theme_override_fonts/normal_font = ExtResource("2_gy5nq")
+theme_override_fonts/bold_font = ExtResource("2_gy5nq")
+theme_override_fonts/bold_italics_font = ExtResource("2_gy5nq")
+theme_override_fonts/italics_font = ExtResource("2_gy5nq")
+theme_override_fonts/mono_font = ExtResource("2_gy5nq")
+theme_override_font_sizes/normal_font_size = 35
+text = "meoow..."
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2100600200]
+visible = false
+offset_left = -36.0
+offset_top = -50.0
+offset_right = 1195.0
+offset_bottom = 694.0
+color = Color(0, 0, 0, 1)
+
+[node name="choices" type="Node2D" parent="." unique_id=1655856774]
+visible = false
+position = Vector2(0, 70)
+
+[node name="Label4" type="Label" parent="choices" unique_id=1059535625]
+offset_left = 642.0
+offset_top = 335.0
+offset_right = 736.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("2_gy5nq")
+theme_override_font_sizes/font_size = 30
+text = "who's gonna feed you?!"
+
+[node name="Label6" type="Label" parent="choices" unique_id=1902181046]
+offset_left = 643.0
+offset_top = 434.0
+offset_right = 737.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("2_gy5nq")
+theme_override_font_sizes/font_size = 30
+text = "yeah. maybe it's worth it"
+
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=582587673]
+position = Vector2(1481, 790)
+rotation = 3.1415927
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

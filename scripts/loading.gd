@@ -23,7 +23,7 @@ func _ready() -> void:
 	random.text = random_array[index]
 	var tween = create_tween().set_parallel(true)
 	tween.tween_property(label,"rotation",deg_to_rad(360),2)
-	tween.tween_property(label,"label_settings:font_size",0.5,2)	
+	tween.tween_property(label,"label_settings:font_size",1,2)	
 	await get_tree().create_timer(0.2).timeout
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.

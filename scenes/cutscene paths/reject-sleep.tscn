@@ -1,3 +1,95 @@
 [gd_scene format=3 uid="uid://dwqwrwcs3lu03"]
 
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_fuoay"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_fjmhx"]
+
 [node name="RejectSleep" type="Node2D" unique_id=1745778292]
+script = ExtResource("1_fuoay")
+text_array = ["i take that back. you're just a party pooper!", "always saying no no no ", "honestly you're just so annoying! why did human pick YOU?!", "---", "He starts to get mad. like really mad.", "the two get into a big fight.", "MEEEOOWOWWWOWOW"]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1550619984]
+offset_left = -37.0
+offset_top = -51.0
+offset_right = 1197.0
+offset_bottom = 700.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1075082440]
+offset_left = 2.0
+offset_top = 103.0
+offset_right = 705.0
+offset_bottom = 711.0
+theme_override_fonts/font = ExtResource("2_fjmhx")
+theme_override_font_sizes/font_size = 14
+text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⣿⣿⠻⠟⠛⠙⠂⣛⢻⣿⣿⣿⣿⣿⣿⡿⢵⠟⠛⠹⣿⣿⡿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢽⣿⠻⢿⣿⣿⣿⣿⠟⣿⣷⠀⠀⢿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠋⢁⣿⣿⣿⣿⣿⡀⠙⠋⠀⢀⣾⣿⣿⠀⠀⠀⠀⠀
+⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣟⣳⣆⢺⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
+⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣏⣼⣿⣿⣌⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
+⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛
+⠀⠀⠴⠚⠉⠀⠀⠀⠉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠋⠁⠀⠀⠀⠉⠛⠢⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"
+
+[node name="Label2" type="RichTextLabel" parent="." unique_id=936934988]
+offset_left = 447.0
+offset_top = 229.0
+offset_right = 1080.0
+offset_bottom = 436.0
+theme_override_fonts/normal_font = ExtResource("2_fjmhx")
+theme_override_fonts/bold_font = ExtResource("2_fjmhx")
+theme_override_fonts/bold_italics_font = ExtResource("2_fjmhx")
+theme_override_fonts/italics_font = ExtResource("2_fjmhx")
+theme_override_fonts/mono_font = ExtResource("2_fjmhx")
+theme_override_font_sizes/normal_font_size = 35
+text = "meoow..."
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=931083005]
+visible = false
+offset_left = -36.0
+offset_top = -50.0
+offset_right = 1195.0
+offset_bottom = 694.0
+color = Color(0, 0, 0, 1)
+
+[node name="choices" type="Node2D" parent="." unique_id=1915655338]
+visible = false
+position = Vector2(0, 70)
+
+[node name="Label4" type="Label" parent="choices" unique_id=38959894]
+offset_left = 642.0
+offset_top = 335.0
+offset_right = 736.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("2_fjmhx")
+theme_override_font_sizes/font_size = 30
+text = "depends. what do i get?"
+
+[node name="Label6" type="Label" parent="choices" unique_id=1680146260]
+offset_left = 643.0
+offset_top = 434.0
+offset_right = 737.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("2_fjmhx")
+theme_override_font_sizes/font_size = 30
+text = "you can be my assistant"
+
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=124988373]
+position = Vector2(1481, 790)
+rotation = 3.1415927
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

@@ -1,27 +1,7 @@
 [gd_scene format=3 uid="uid://d0wtbfili3d55"]
 
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_wop6a"]
-
-[sub_resource type="FontFile" id="FontFile_bag8h"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/40/0/ascent = 0.0
-cache/0/40/0/descent = 0.0
-cache/0/40/0/underline_position = 0.0
-cache/0/40/0/underline_thickness = 0.0
-cache/0/40/0/scale = 1.0
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_bag8h"]
 
 [node name="WorldDominationFun" type="Node2D" unique_id=1596214005]
 script = ExtResource("1_wop6a")
@@ -41,6 +21,7 @@ offset_left = 2.0
 offset_top = 85.0
 offset_right = 705.0
 offset_bottom = 693.0
+theme_override_fonts/font = ExtResource("2_bag8h")
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
@@ -68,11 +49,16 @@ text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀
 ⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 
-[node name="Label2" type="RichTextLabel" parent="." unique_id=1874840847]
+[node name="Label2" type="RichTextLabel" parent="." unique_id=1953593388]
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
 offset_bottom = 348.0
+theme_override_fonts/normal_font = ExtResource("2_bag8h")
+theme_override_fonts/bold_font = ExtResource("2_bag8h")
+theme_override_fonts/bold_italics_font = ExtResource("2_bag8h")
+theme_override_fonts/italics_font = ExtResource("2_bag8h")
+theme_override_fonts/mono_font = ExtResource("2_bag8h")
 theme_override_font_sizes/normal_font_size = 35
 text = "meoow..."
 
@@ -86,14 +72,15 @@ color = Color(0, 0, 0, 1)
 
 [node name="choices" type="Node2D" parent="." unique_id=1116119589]
 visible = false
+position = Vector2(0, 70)
 
 [node name="Label4" type="Label" parent="choices" unique_id=794075161]
 offset_left = 642.0
 offset_top = 335.0
 offset_right = 736.0
 offset_bottom = 390.0
-theme_override_fonts/font = SubResource("FontFile_bag8h")
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("2_bag8h")
+theme_override_font_sizes/font_size = 30
 text = "depends. what do i get?"
 
 [node name="Label6" type="Label" parent="choices" unique_id=395268460]
@@ -101,8 +88,8 @@ offset_left = 643.0
 offset_top = 434.0
 offset_right = 737.0
 offset_bottom = 489.0
-theme_override_fonts/font = SubResource("FontFile_bag8h")
-theme_override_font_sizes/font_size = 40
+theme_override_fonts/font = ExtResource("2_bag8h")
+theme_override_font_sizes/font_size = 30
 text = "you can be my assistant"
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=390249192]

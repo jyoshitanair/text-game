@@ -1,3 +1,56 @@
 [gd_scene format=3 uid="uid://i3orqcmrtk15"]
 
+[ext_resource type="Script" uid="uid://n8jmw6mekcap" path="res://scripts/settings.gd" id="1_6wm04"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_f4mfi"]
+[ext_resource type="FontFile" uid="uid://5xoid7wdge1y" path="res://fonts/CodeRider-q2qVq.otf" id="3_es4n0"]
+
 [node name="Settings" type="Node2D" unique_id=277099554]
+script = ExtResource("1_6wm04")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=552308489]
+offset_left = -37.0
+offset_top = -51.0
+offset_right = 1178.0
+offset_bottom = 695.0
+color = Color(0, 0, 0, 1)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=62739044]
+offset_left = 107.0
+offset_top = 181.0
+offset_right = 515.0
+offset_bottom = 233.0
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 32
+placeholder_text = "silly kitty"
+
+[node name="Label2" type="Label" parent="." unique_id=135824696]
+offset_left = 66.0
+offset_top = 22.0
+offset_right = 1099.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("3_es4n0")
+theme_override_font_sizes/font_size = 42
+text = "Settings:"
+
+[node name="Label" type="Label" parent="." unique_id=1137182291]
+offset_left = 73.0
+offset_top = 127.0
+offset_right = 422.0
+offset_bottom = 163.0
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 26
+text = "What should we call ya?"
+
+[node name="Label4" type="Label" parent="." unique_id=649464168]
+offset_left = 953.0
+offset_top = 577.0
+offset_right = 1047.0
+offset_bottom = 632.0
+theme_override_fonts/font = ExtResource("3_es4n0")
+theme_override_font_sizes/font_size = 40
+text = "Back"
+
+[node name="pointer" type="Polygon2D" parent="." unique_id=1452488321]
+position = Vector2(169, 277)
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)

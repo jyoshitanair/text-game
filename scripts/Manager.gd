@@ -11,6 +11,7 @@ var text_array_index = 0
 var can_move= false
 var visible_characters = null 
 var total_type_time = null 
+var urname = "silly kitty"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

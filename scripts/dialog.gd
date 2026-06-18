@@ -13,17 +13,25 @@ var type_finished
 var text_array_index = 0 
 var can_move= false
 var total_type_time = null
+var ending= false
 @export var text_array = ["no","sjkfjladjhkjhjkkhjhjkhjkhhjhjhkhjhkjf","ksjdlkfjslf"]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if self.name == "RejectSleep":
+		ending = true
 	pointer_position = Manager.pointer_position
+	if pointer_position ==1:
+		pointer.position = Vector2(1481.0,690.0)
+	else:
+		pointer.position = Vector2(1481.0,790.0)
 	text_array_index = Manager.text_array_index
 	normal_type = Manager.normal_type
 	tween_type = Manager.tween_type
 	type_finished= Manager.type_finished
 	text_array_index = Manager.text_array_index
 	can_move = Manager.can_move
-	main_text.text = text_array[text_array_index]
+	if text_array_index < text_array.size():
+		main_text.text = text_array[text_array_index]
 	main_text.visible = false
 	if can_move == false:
 		fade.modulate = Color(0.0, 0.0, 0.0, 1.0)
@@ -35,7 +43,13 @@ func _ready() -> void:
 	if Manager.visible_characters != null: 
 		main_text.visible_characters = Manager.visible_characters
 	fade.queue_free()
-	typeity_type()
+	if normal_type:
+		typeity_type()
+	else:
+		main_text.text = text_array[text_array_index-1]
+		main_text.show()
+		if not ending:
+			choices.show()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
@@ -113,15 +127,89 @@ func _process(delta: float) -> void:
 		⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 		⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
 		⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀"
-					
+					if text_array_index==3 and self.name == "JoinSleep":
+						cat.text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢄⣶⠖⣦⢀⠀⠀⠀⠀⠀⠀⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣵⠟⠁⠀⠈⢷⡀⠄⠀⠀⠀⠀⡄⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⢵⣂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡼⡋⠂⠀⠀⠀⠀⠀⠐⢧⡢⠀⠀⢮⠖⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢶⡿⠉⠉⠻⢷⣤⠀⠀⠀⠀⠀⣀⣀⣠⣠⡤⣤⡦⣖⣦⡶⣯⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢕⡗⢅⢀⢀⣠
+⠀⠀⠀⠀⠀⠀⠀⠀⡐⣪⡇⠀⠀⠀⠀⠈⠷⣶⠺⠛⠟⠙⠀⠘⠀⠁⠁⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠗⠋⠃⠁⠁
+⠀⠀⠀⠀⠀⠀⠀⠠⢰⢟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠂⣎⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣜⣶⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠰⡷⠳⡺⡜⠫⠫⠷⠁⠁⠀⠀⢨⠃⠀⠀⠀⠀
+⠀⠀⠀⢀⡀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⣴⡾⡷⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⣶⠀⠀
+⠀⠀⠙⢓⠢⣃⡶⣰⠄⠀⠀⠀⠀⡀⣠⣴⡏⡋⠊⠈⠀⠀⠀⠀⠀⠀⠲⠛⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣀⢄⢴⡟⠋⠁⠀⠀⠀
+⠀⠀⠀⠀⡀⡷⠁⠀⠀⠀⡶⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠬⠽⠶⠗⠑⠉⠙⠷⣢⡄⢄⠀⠀
+⠀⠀⠠⡲⠏⠀⠀⠀⢠⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠈⠫⡻⠤
+⠀⢘⠟⠁⠀⠀⠀⠻⡺⢧⣦⣠⣠⣄⡠⣄⣄⣤⡤⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠉⠁⠉⣩⡻⣙⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⡱⠎⡁⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⢦⣴⣮⠔⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀
+⠀⠀⠀⠀⠀⠀⠀⡿⡬⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⢚⠛⠻⠡
+⠀⠀⠀⠀⠀⠀⢘⠛⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠓⣖⡦⠀
+⠀⠀⠀⠀⠀⢀⣸⡇⡇⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⣇⡁
+⠀⠀⠀⠀⠀⠀⠻⣭⡷⠇⠻⠋⣎⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠏
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡖⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⢀⣀⣄⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡢⡯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡿⠏⠍⠙⠉⠈⣹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢭⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢽⡻⠁⠀⠀⠀⠀⠨⠉⢗⡑⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+					if text_array_index==3 and self.name == "DecapitatedCatHead":
+						cat.text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⣤⣒⣒⡾⢭⡩⠉⢰⢖⣖⠤⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⢷⣫⠤⢲⠄⠀⠀⠧⡵⠀⡛⠉⢂⢄⣀⢻⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⡴⣏⡽⢿⣿⣜⢲⡀⡼⠃⠀⡠⢻⣓⣄⢹⣼⢪⠃⢠⠉⠞⠋⠉⠢⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣴⠏⠀⢠⠴⢾⡽⣥⡟⡃⢙⡤⢤⡱⣈⠤⡍⣄⣞⠛⣒⣼⣲⠀⠀⠀⠀⠈⢢⡀⠀⠀⠀
+⠀⠀⢠⡞⠁⠀⠀⠳⡤⡼⠀⠋⠱⣔⢄⡎⠭⠕⠁⠸⢹⠛⢯⣦⠊⠉⠁⠀⠀⠀⠀⠀⠀⠱⡄⠀⠀
+⠀⢠⡟⠀⠀⠀⠀⠀⠛⠀⠀⢤⣶⡸⡼⠸⡀⠀⠀⠸⢸⢠⠈⠃⡠⠤⣲⣄⢀⣗⣷⡄⢷⡀⠘⡄⠀
+⠀⣮⠃⠀⠀⠀⠀⠀⢀⡠⠞⠛⠁⠈⠑⡣⠃⠀⠀⢰⢈⠈⡢⠶⠕⠒⣜⡋⣻⣟⢦⠀⠘⠃⠀⢱⡀
+⢸⢻⠀⠀⠀⠀⠀⢀⡼⣘⡕⠀⠀⠀⠈⠀⠀⠀⢀⢇⢎⡜⠁⠀⠀⠀⠀⠈⠈⠉⠉⣄⠀⠀⠀⡀⡇
+⡟⡎⡄⠀⡖⠒⢲⢣⠌⡎⠀⠀⠀⠀⠀⠀⠀⠀⡜⡜⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣆⠀⢠⠟⣼
+⡿⡔⢝⣄⢇⢶⠀⠽⢲⠁⠀⠀⠀⠀⠀⠀⠀⠀⢇⢇⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣶⡇⠀⣿
+⣷⠈⠢⣈⠉⡪⣧⡂⠌⠒⠄⠀⠀⠀⠀⠀⠀⠀⠘⢎⠪⡓⠤⠠⠤⠲⡄⠀⠀⠀⠀⠀⠀⣰⢱⢡⢻
+⢸⡄⠀⠀⠙⢎⡎⡎⠑⠒⠲⣄⡀⠀⢦⡀⠀⠀⠀⠀⠑⠢⠄⠀⡄⡇⢧⠀⠀⠀⠀⠀⠞⢡⠃⡠⡇
+⠈⣷⠀⠀⠀⠘⣇⠇⠀⠀⠀⠀⠹⢂⣂⡀⠉⠲⡄⠀⠀⠀⠀⠀⠁⠀⢸⠀⠀⠀⠀⢸⢀⡹⡀⢱⠁
+⠀⠘⣧⠀⠀⢰⢇⢆⠀⠀⠀⠀⠀⠀⠀⠈⡵⡀⡅⠀⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠰⢳⢫⢣⢣⠇⠀
+⠀⠀⠘⣧⠀⠀⠳⣗⢳⢤⠀⠀⠀⠀⠀⠸⣰⢱⠁⠀⠀⠀⠀⠀⠀⠀⢹⠀⢀⠜⠁⠓⡣⣣⠏⠀⠀
+⠀⠀⠀⠈⢷⣄⠀⠈⢣⢏⡇⠀⠀⠀⡔⣊⢜⡎⠀⠀⠀⠀⠀⠀⢆⠰⣘⣺⠕⣀⠤⢀⡴⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠙⢷⣄⠀⢫⠘⡄⢀⡞⡝⡰⠋⠀⠀⠀⠀⠀⠀⠀⠀⠁⠒⠒⠊⢁⡴⠋⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠉⠻⢦⣧⡘⢾⣜⠰⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠖⠉⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠳⠿⢤⣌⣀⣀⣀⣀⣀⣠⡤⠤⠖⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+					if text_array_index==2 and self.name == "Assistant":
+						cat.text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣛⢉⣙⠛⢿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⢋⠹⢿⣿⣿⣿⣿⣶⣿⣿⣶⣶⣼⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⣿⣿⠫⠍⠉⠀⠀⠀⠀⠰⣿⣿⣿⣿⣿⠟⠁⠀⠀⠹⣿⣿⡿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢼⣿⠀⢿⣿⣿⣿⣿⠀⣾⣷⠀⠀⢿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠋⢀⣿⣿⣿⣿⣿⡀⠙⠋⠀⢀⣾⣿⣿⠀⠀⠀⠀⠀
+⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣾⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
+⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣽⣶⣦⣹⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
+⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛
+⠀⠀⠴⠚⠉⠀⠀⠀⠉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣛⡏⠥⣦⡀⠀⠉⠛⠢⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣯⣿⡆⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠧⢾⡇⣏⣿⡅⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⢘⢿⣾⣿⣗⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣾⡷⡿⣿⡪⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⣿⢿⡏⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣿⣿⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"	
 					if text_array_index >= text_array.size():
 						print("FULL")
 						normal_type = false 	
-						choices.show()
+						if not ending: 
+							choices.show()
 						return
 					main_text.text= text_array[text_array_index]
 					typeity_type()
 			else:
+				#not normal type
+				if ending: 
+					get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
+					return
 				if pointer_position == 1 :
 					get_tree().change_scene_to_file(path1)
 				if pointer_position == 2:
@@ -150,4 +238,4 @@ func typeity_type() -> void:
 	tween_type.tween_property(main_text, "visible_characters",main_text.text.length(),total_type_time)
 	await tween_type.finished
 	type_finished = true
-		
+	

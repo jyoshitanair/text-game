@@ -1,69 +1,8 @@
 [gd_scene format=3 uid="uid://dvaxvq3fjv1vd"]
 
 [ext_resource type="Script" uid="uid://yfhp7rtqxdni" path="res://scripts/how_to_play.gd" id="1_qvgw6"]
-
-[sub_resource type="FontFile" id="FontFile_xyu5p"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/42/0/ascent = 0.0
-cache/0/42/0/descent = 0.0
-cache/0/42/0/underline_position = 0.0
-cache/0/42/0/underline_thickness = 0.0
-cache/0/42/0/scale = 1.0
-
-[sub_resource type="FontFile" id="FontFile_l55he"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/28/0/ascent = 0.0
-cache/0/28/0/descent = 0.0
-cache/0/28/0/underline_position = 0.0
-cache/0/28/0/underline_thickness = 0.0
-cache/0/28/0/scale = 1.0
-
-[sub_resource type="FontFile" id="FontFile_t7nq6"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/40/0/ascent = 0.0
-cache/0/40/0/descent = 0.0
-cache/0/40/0/underline_position = 0.0
-cache/0/40/0/underline_thickness = 0.0
-cache/0/40/0/scale = 1.0
+[ext_resource type="FontFile" uid="uid://5xoid7wdge1y" path="res://fonts/CodeRider-q2qVq.otf" id="2_l55he"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="3_t7nq6"]
 
 [node name="HowToPlay" type="Node2D" unique_id=442512342]
 script = ExtResource("1_qvgw6")
@@ -80,17 +19,17 @@ offset_left = 75.0
 offset_top = 30.0
 offset_right = 1108.0
 offset_bottom = 95.0
-theme_override_fonts/font = SubResource("FontFile_xyu5p")
+theme_override_fonts/font = ExtResource("2_l55he")
 theme_override_font_sizes/font_size = 42
 text = "How to Play:"
 
 [node name="Label2" type="Label" parent="." unique_id=765328726]
-offset_left = 176.0
-offset_top = 112.0
-offset_right = 965.0
-offset_bottom = 575.0
-theme_override_fonts/font = SubResource("FontFile_l55he")
-theme_override_font_sizes/font_size = 28
+offset_left = 132.0
+offset_top = 132.0
+offset_right = 1154.0
+offset_bottom = 595.0
+theme_override_fonts/font = ExtResource("3_t7nq6")
+theme_override_font_sizes/font_size = 26
 text = "You've been adopted into a new purrever home!
 But your kitty roommate seems just a little...depressed? 
 unhinged? kind? honestly depends on how you treat him.
@@ -104,11 +43,11 @@ unhinged? kind? honestly depends on how you treat him.
       now go forth brave warrior! ≽( ྀི◉˕ ◉ ≼マ"
 
 [node name="Label4" type="Label" parent="." unique_id=762057158]
-offset_left = 891.0
-offset_top = 572.0
-offset_right = 985.0
-offset_bottom = 627.0
-theme_override_fonts/font = SubResource("FontFile_t7nq6")
+offset_left = 953.0
+offset_top = 577.0
+offset_right = 1047.0
+offset_bottom = 632.0
+theme_override_fonts/font = ExtResource("2_l55he")
 theme_override_font_sizes/font_size = 40
 text = "Back"
 
