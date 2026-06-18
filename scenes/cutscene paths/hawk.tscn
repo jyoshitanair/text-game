@@ -5,6 +5,8 @@
 
 [node name="Hawk" type="Node2D" unique_id=270736368]
 script = ExtResource("1_tbfo1")
+path1 = "res://scenes/endings/sad-kitty.tscn"
+path2 = "res://scenes/endings/hungry.tscn"
 text_array = ["a hawk?! scary...", "i guess we'll just stay in here then.", "it's safer...sigh"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=895823838]

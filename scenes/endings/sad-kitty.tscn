@@ -1,25 +1,27 @@
-[gd_scene format=3 uid="uid://jgb07u6mfd28"]
+[gd_scene format=3 uid="uid://djq21qfyi0v00"]
 
-[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_kcy6r"]
-[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_76mbv"]
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_5ob54"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_xywt2"]
 
-[node name="Who\'sGonnaFeedYou" type="Node2D" unique_id=346042095 groups=["ending"]]
-script = ExtResource("1_kcy6r")
-text_array = ["What...oh good point I guess.", "I do really like the food here.", "his stomach grumbles"]
+[node name="SadKitty" type="Node2D" unique_id=712384703 groups=["ending"]]
+script = ExtResource("1_5ob54")
+path1 = "res://scenes/slots.tscn"
+path2 = "res://scenes/slots.tscn"
+text_array = ["he sighs.", "i guess i was just destined to be here forever", "he looks out the window longingly", "ENDING: so close yet so far"]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=267861414]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=977470044]
 offset_left = -37.0
 offset_top = -51.0
 offset_right = 1197.0
 offset_bottom = 700.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="." unique_id=1782238933]
-offset_left = 5.0
-offset_top = 111.0
-offset_right = 708.0
-offset_bottom = 719.0
-theme_override_fonts/font = ExtResource("2_76mbv")
+[node name="Label" type="Label" parent="." unique_id=1855107378]
+offset_left = 2.0
+offset_top = 101.0
+offset_right = 705.0
+offset_bottom = 709.0
+theme_override_fonts/font = ExtResource("2_xywt2")
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
@@ -45,20 +47,20 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 ⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"
 
-[node name="Label2" type="RichTextLabel" parent="." unique_id=2011681096]
+[node name="Label2" type="RichTextLabel" parent="." unique_id=1556120554]
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
 offset_bottom = 348.0
-theme_override_fonts/normal_font = ExtResource("2_76mbv")
-theme_override_fonts/bold_font = ExtResource("2_76mbv")
-theme_override_fonts/bold_italics_font = ExtResource("2_76mbv")
-theme_override_fonts/italics_font = ExtResource("2_76mbv")
-theme_override_fonts/mono_font = ExtResource("2_76mbv")
+theme_override_fonts/normal_font = ExtResource("2_xywt2")
+theme_override_fonts/bold_font = ExtResource("2_xywt2")
+theme_override_fonts/bold_italics_font = ExtResource("2_xywt2")
+theme_override_fonts/italics_font = ExtResource("2_xywt2")
+theme_override_fonts/mono_font = ExtResource("2_xywt2")
 theme_override_font_sizes/normal_font_size = 35
 text = "meoow..."
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=821378712]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1888841749]
 visible = false
 offset_left = -36.0
 offset_top = -50.0
@@ -66,29 +68,29 @@ offset_right = 1195.0
 offset_bottom = 694.0
 color = Color(0, 0, 0, 1)
 
-[node name="choices" type="Node2D" parent="." unique_id=330995837]
+[node name="choices" type="Node2D" parent="." unique_id=202172138]
 visible = false
 position = Vector2(0, 70)
 
-[node name="Label4" type="Label" parent="choices" unique_id=1389493736]
+[node name="Label4" type="Label" parent="choices" unique_id=1067889348]
 offset_left = 642.0
 offset_top = 335.0
 offset_right = 736.0
 offset_bottom = 390.0
-theme_override_fonts/font = ExtResource("2_76mbv")
+theme_override_fonts/font = ExtResource("2_xywt2")
 theme_override_font_sizes/font_size = 30
-text = "who's gonna feed you?!"
+text = "don't be sad. it's dangerous"
 
-[node name="Label6" type="Label" parent="choices" unique_id=137669517]
+[node name="Label6" type="Label" parent="choices" unique_id=1153514199]
 offset_left = 643.0
 offset_top = 434.0
 offset_right = 737.0
 offset_bottom = 489.0
-theme_override_fonts/font = ExtResource("2_76mbv")
+theme_override_fonts/font = ExtResource("2_xywt2")
 theme_override_font_sizes/font_size = 30
-text = "yeah. maybe it's worth it"
+text = "yeah. let's go eat."
 
-[node name="pointer" type="Polygon2D" parent="choices" unique_id=1834678556]
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=2142376786]
 position = Vector2(1481, 790)
 rotation = 3.1415927
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)

@@ -229,6 +229,9 @@ func _process(delta: float) -> void:
 					if  self.name == "RejectSleep":
 						get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
 						return
+					if  self.name == "Assitant":
+						get_tree().change_scene_to_file("res://scenes/endings/worlddominating-assistant.tscn")
+						return
 					if  self.name == "Who'sGonnaFeedYou":
 						get_tree().change_scene_to_file("res://scenes/endings/hungry.tscn")
 						return
@@ -237,6 +240,9 @@ func _process(delta: float) -> void:
 						return
 					if  self.name == "YouFirstLoser":
 						get_tree().change_scene_to_file("res://scenes/endings/happy-tree.tscn")
+						return
+					if  self.name == "YeahIAgree(feedingAlt)":
+						get_tree().change_scene_to_file("res://scenes/endings/happy-escape.tscn")
 						return
 					if  self.name == "i-first":
 						get_tree().change_scene_to_file("res://scenes/endings/fell-off-tree.tscn")

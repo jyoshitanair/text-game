@@ -5,6 +5,8 @@
 
 [node name="DecapitatedCatHead" type="Node2D" unique_id=751765786]
 script = ExtResource("1_0adwa")
+path1 = "res://scenes/cutscene paths/who's gonna feed you.tscn"
+path2 = "res://scenes/cutscene paths/yeah i agree (feeding alt).tscn"
 text_array = ["You saw WHAT?!", "yeah no no no i do not want to become a decapitated cat head", "....", "But still....don't you wonder how big the world is.", "and it looks so much nicer than this stuffy home..."]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=383554493]

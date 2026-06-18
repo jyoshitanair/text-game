@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_fmtju"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_11mtx"]
 
-[node name="Assistant" type="Node2D" unique_id=814336424]
+[node name="Assistant" type="Node2D" unique_id=814336424 groups=["ending"]]
 script = ExtResource("1_fmtju")
+path1 = "res://scenes/endings/worlddominating-assistant.tscn"
+path2 = "res://scenes/endings/worlddominating-assistant.tscn"
 text_array = ["Seriously! Okay yeah ! Let's go do this!", "...", "sooo uhhh....what do we do first?!", "I'm kinda new to all this \"world dominating\""]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=822736345]
