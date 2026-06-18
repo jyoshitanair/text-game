@@ -25,8 +25,8 @@ cache/0/40/0/scale = 1.0
 
 [node name="YesBirdwatching" type="Node2D" unique_id=1844096319]
 script = ExtResource("1_klxk6")
-path1 = "res://scenes/cutscene paths/no-birdwatching.tscn"
-path2 = "res://scenes/cutscene paths/no-birdwatching.tscn"
+path1 = "res://scenes/cutscene paths/sometimes-wonder.tscn"
+path2 = "res://scenes/cutscene paths/its-dangerous.tscn"
 text_array = ["Here we are. ", "Its kinda plain I guess. But looking outside always makes me happy", "...", "hey cat.", "do you ever wonder what's it's like to actually...be out there?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=645738613]
@@ -48,13 +48,13 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 ⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀
-⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
-⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⠟⡻⢿⣿⣿⣿⣿⣿⡟⣩⣍⢻⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣷⣿⣿⣦⣽⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
 ⠀⠀⠀⠘⣿⣿⣿⣿⠟⠁⠀⠀⠀⠹⣿⣿⣿⣿⣿⠟⠁⠀⠀⠹⣿⣿⡿⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠙⢷⣄⠀⢿⣿⣿⣿⣿⠀⣾⣿⠏⠀⢿⣿⣷⠀⠀⠀⠀⠀
-⠀⠀⠀⢠⣿⣿⣿⣷⠀⠰⠟⢋⠋⠀⣿⣿⣿⣿⣿⡀⠙⠛⠓⠀⣾⣿⣿⠀⠀⠀⠀⠀
-⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣾⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
-⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
+⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢼⣿⠀⢿⣿⣿⣿⣿⠀⣾⣷⠀⠀⢿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠋⢀⣿⣿⣿⣿⣿⡀⠙⠋⠀⢀⣾⣿⣿⠀⠀⠀⠀⠀
+⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⠋⠉⢸⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
+⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⢀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
 ⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛
 ⠀⠀⠴⠚⠉⠀⠀⠀⠉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠋⠁⠀⠀⠀⠉⠛⠢⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -83,6 +83,7 @@ offset_bottom = 694.0
 color = Color(0, 0, 0, 1)
 
 [node name="choices" type="Node2D" parent="." unique_id=513592275]
+visible = false
 
 [node name="Label4" type="Label" parent="choices" unique_id=719114812]
 offset_left = 642.0
@@ -103,7 +104,7 @@ theme_override_font_sizes/font_size = 40
 text = "It's dangerous."
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=1838137565]
-position = Vector2(1481, 693)
+position = Vector2(1481, 790)
 rotation = 3.1415927
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

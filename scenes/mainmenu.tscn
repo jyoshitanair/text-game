@@ -91,13 +91,13 @@ offset_right = 1115.0
 offset_bottom = 352.0
 theme_override_fonts/font = SubResource("FontFile_5mbse")
 theme_override_font_sizes/font_size = 54
-text = "The Great Escape"
+text = "Cat Mayhem"
 
 [node name="Label3" type="Label" parent="." unique_id=962289989]
-offset_left = 951.0
-offset_top = 183.0
-offset_right = 991.0
-offset_bottom = 266.0
+offset_left = 837.0
+offset_top = 185.0
+offset_right = 877.0
+offset_bottom = 268.0
 theme_override_font_sizes/font_size = 60
 text = "|"
 
@@ -126,9 +126,9 @@ offset_right = 738.0
 offset_bottom = 587.0
 theme_override_fonts/font = SubResource("FontFile_natt5")
 theme_override_font_sizes/font_size = 40
-text = "???"
+text = "How to Play"
 
 [node name="pointer" type="Polygon2D" parent="." unique_id=222991462]
-position = Vector2(-80, 40)
+position = Vector2(-20, 40)
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)

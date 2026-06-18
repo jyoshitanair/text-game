@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bx77rmbfobfq2"]
+[gd_scene format=3 uid="uid://bme3jmvgy2386"]
 
-[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_7cr1f"]
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_d1wpf"]
 
-[sub_resource type="FontFile" id="FontFile_wl6k7"]
+[sub_resource type="FontFile" id="FontFile_6f1cw"]
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -23,20 +23,20 @@ cache/0/40/0/underline_position = 0.0
 cache/0/40/0/underline_thickness = 0.0
 cache/0/40/0/scale = 1.0
 
-[node name="NoBirdwatching" type="Node2D" unique_id=386711333]
-script = ExtResource("1_7cr1f")
-path1 = "res://scenes/cutscene paths/sleep-fun.tscn"
-path2 = "res://scenes/cutscene paths/world-domination-fun.tscn"
-text_array = ["What? You DON'T want to go to the patio?", "What do you even do for fun then?"]
+[node name="SometimesWonder" type="Node2D" unique_id=1746124595]
+script = ExtResource("1_d1wpf")
+path1 = "res://scenes/cutscene paths/reject_get_outta_here.tscn"
+path2 = "res://scenes/cutscene paths/get_outta_here.tscn"
+text_array = ["really! yeah i know i hate being cooped up in here too!", "the outdoors is just so much more free. and we can FEEL everything!", "honestly....do you just wanna get outta here?"]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1855844131]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=718540010]
 offset_left = -37.0
 offset_top = -51.0
 offset_right = 1197.0
 offset_bottom = 700.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="." unique_id=2060780609]
+[node name="Label" type="Label" parent="." unique_id=795275210]
 offset_left = 3.0
 offset_top = 101.0
 offset_right = 706.0
@@ -66,7 +66,7 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 ⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"
 
-[node name="Label2" type="RichTextLabel" parent="." unique_id=710198271]
+[node name="Label2" type="RichTextLabel" parent="." unique_id=839523625]
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
@@ -74,7 +74,7 @@ offset_bottom = 348.0
 theme_override_font_sizes/normal_font_size = 35
 text = "meoow..."
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=1930642132]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2059173011]
 visible = false
 offset_left = -36.0
 offset_top = -50.0
@@ -82,28 +82,28 @@ offset_right = 1195.0
 offset_bottom = 694.0
 color = Color(0, 0, 0, 1)
 
-[node name="choices" type="Node2D" parent="." unique_id=481350862]
+[node name="choices" type="Node2D" parent="." unique_id=690989370]
 visible = false
 
-[node name="Label4" type="Label" parent="choices" unique_id=1863525476]
+[node name="Label4" type="Label" parent="choices" unique_id=1525290651]
 offset_left = 642.0
 offset_top = 335.0
 offset_right = 736.0
 offset_bottom = 390.0
-theme_override_fonts/font = SubResource("FontFile_wl6k7")
+theme_override_fonts/font = SubResource("FontFile_6f1cw")
 theme_override_font_sizes/font_size = 40
-text = "Sleep"
+text = "no way! i just wonder"
 
-[node name="Label6" type="Label" parent="choices" unique_id=2055805900]
+[node name="Label6" type="Label" parent="choices" unique_id=1431384663]
 offset_left = 643.0
 offset_top = 434.0
 offset_right = 737.0
 offset_bottom = 489.0
-theme_override_fonts/font = SubResource("FontFile_wl6k7")
+theme_override_fonts/font = SubResource("FontFile_6f1cw")
 theme_override_font_sizes/font_size = 40
-text = "World Domination?"
+text = "let's get out of here!"
 
-[node name="pointer" type="Polygon2D" parent="choices" unique_id=292819827]
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=334107122]
 position = Vector2(1481, 790)
 rotation = 3.1415927
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)

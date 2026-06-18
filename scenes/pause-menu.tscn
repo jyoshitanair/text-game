@@ -1,8 +1,27 @@
-[gd_scene format=3 uid="uid://b7wcmt1jwemnk"]
+[gd_scene format=3 uid="uid://dg1xgh28ql8lb"]
 
-[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_pkx4w"]
+[sub_resource type="FontFile" id="FontFile_p6jiu"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/54/0/ascent = 0.0
+cache/0/54/0/descent = 0.0
+cache/0/54/0/underline_position = 0.0
+cache/0/54/0/underline_thickness = 0.0
+cache/0/54/0/scale = 1.0
 
-[sub_resource type="FontFile" id="FontFile_pkx4w"]
+[sub_resource type="FontFile" id="FontFile_024ri"]
 cache/0/variation_coordinates = {}
 cache/0/face_index = 0
 cache/0/embolden = 0.0
@@ -23,24 +42,20 @@ cache/0/40/0/underline_position = 0.0
 cache/0/40/0/underline_thickness = 0.0
 cache/0/40/0/scale = 1.0
 
-[node name="Dialog" type="Node2D" unique_id=1020007431]
-script = ExtResource("1_pkx4w")
-path1 = "res://scenes/cutscene paths/yes-birdwatching.tscn"
-path2 = "res://scenes/cutscene paths/no-birdwatching.tscn"
-text_array = ["meooowwww....", "human brought in another cat?", "how...intresting", "would you like to go bird watching with me cat?"]
+[node name="PauseMenu" type="Node2D" unique_id=608561749]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1521870883]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=896928315]
 offset_left = -37.0
 offset_top = -51.0
-offset_right = 1197.0
-offset_bottom = 700.0
+offset_right = 1178.0
+offset_bottom = 644.0
 color = Color(0, 0, 0, 1)
 
-[node name="Label" type="Label" parent="." unique_id=148917397]
-offset_left = 3.0
-offset_top = 101.0
-offset_right = 706.0
-offset_bottom = 709.0
+[node name="Label" type="Label" parent="." unique_id=86901413]
+offset_left = 53.0
+offset_top = 87.0
+offset_right = 736.0
+offset_bottom = 682.0
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
@@ -51,8 +66,8 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 ⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
 ⠀⠀⠀⠘⣿⣿⣿⣿⠟⠁⠀⠀⠀⠹⣿⣿⣿⣿⣿⠟⠁⠀⠀⠹⣿⣿⡿⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠙⢷⣄⠀⢿⣿⣿⣿⣿⠀⣾⣿⠏⠀⢿⣿⣷⠀⠀⠀⠀⠀
-⠀⠀⠀⢠⣿⣿⣿⣷⠀⠰⠟⢋⠋⠀⣿⣿⣿⣿⣿⡀⠙⠛⠓⠀⣾⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢼⣿⠀⢿⣿⣿⣿⣿⠀⣾⣷⠀⠀⢿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠋⢀⣿⣿⣿⣿⣿⡀⠙⠋⠀⢀⣾⣿⣿⠀⠀⠀⠀⠀
 ⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣾⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
 ⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
 ⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛
@@ -66,45 +81,51 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 ⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"
 
-[node name="Label2" type="RichTextLabel" parent="." unique_id=325433929]
-offset_left = 447.0
-offset_top = 229.0
-offset_right = 1080.0
-offset_bottom = 348.0
-theme_override_font_sizes/normal_font_size = 35
-text = "meoow..."
+[node name="Label2" type="Label" parent="." unique_id=137217831]
+offset_left = 518.0
+offset_top = 192.0
+offset_right = 1115.0
+offset_bottom = 352.0
+theme_override_fonts/font = SubResource("FontFile_p6jiu")
+theme_override_font_sizes/font_size = 54
+text = "Cat Mayhem"
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=878093172]
-visible = false
-offset_left = -36.0
-offset_top = -50.0
-offset_right = 1195.0
-offset_bottom = 694.0
-color = Color(0, 0, 0, 1)
+[node name="Label3" type="Label" parent="." unique_id=1707182062]
+offset_left = 837.0
+offset_top = 185.0
+offset_right = 877.0
+offset_bottom = 268.0
+theme_override_font_sizes/font_size = 60
+text = "|"
 
-[node name="choices" type="Node2D" parent="." unique_id=2078719082]
-visible = false
-
-[node name="Label4" type="Label" parent="choices" unique_id=1984115406]
+[node name="Label4" type="Label" parent="." unique_id=1542838575]
 offset_left = 642.0
 offset_top = 335.0
 offset_right = 736.0
 offset_bottom = 390.0
-theme_override_fonts/font = SubResource("FontFile_pkx4w")
+theme_override_fonts/font = SubResource("FontFile_024ri")
 theme_override_font_sizes/font_size = 40
-text = "Yes"
+text = "Continue"
 
-[node name="Label6" type="Label" parent="choices" unique_id=1767324370]
+[node name="Label6" type="Label" parent="." unique_id=84846771]
 offset_left = 643.0
 offset_top = 434.0
 offset_right = 737.0
 offset_bottom = 489.0
-theme_override_fonts/font = SubResource("FontFile_pkx4w")
+theme_override_fonts/font = SubResource("FontFile_024ri")
 theme_override_font_sizes/font_size = 40
-text = "No"
+text = "Settings"
 
-[node name="pointer" type="Polygon2D" parent="choices" unique_id=1176348713]
-position = Vector2(1481, 790)
-rotation = 3.1415927
+[node name="Label5" type="Label" parent="." unique_id=1223043503]
+offset_left = 644.0
+offset_top = 532.0
+offset_right = 738.0
+offset_bottom = 587.0
+theme_override_fonts/font = SubResource("FontFile_024ri")
+theme_override_font_sizes/font_size = 40
+text = "How to Play"
+
+[node name="pointer" type="Polygon2D" parent="." unique_id=267963479]
+position = Vector2(-20, 40)
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
-polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)
+polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)
