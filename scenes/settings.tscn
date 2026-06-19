@@ -15,10 +15,16 @@ offset_bottom = 695.0
 color = Color(0, 0, 0, 1)
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=62739044]
-offset_left = 107.0
-offset_top = 181.0
-offset_right = 515.0
-offset_bottom = 233.0
+offset_left = 101.0
+offset_top = 205.0
+offset_right = 509.0
+offset_bottom = 257.0
+theme_override_colors/search_result_color = Color(0.6220256, 0.34915322, 0.6373065, 1)
+theme_override_colors/caret_color = Color(0.4, 0.2, 0.4117647, 1)
+theme_override_colors/selection_color = Color(0.62352943, 0.34901962, 0.6392157, 1)
+theme_override_colors/font_color = Color(0.62352943, 0.34901962, 0.6392157, 1)
+theme_override_colors/font_outline_color = Color(0.62352943, 0.34901962, 0.6392157, 1)
+theme_override_colors/current_line_color = Color(0.23058021, 0.10245568, 0.2383278, 0.4745098)
 theme_override_fonts/font = ExtResource("2_f4mfi")
 theme_override_font_sizes/font_size = 32
 placeholder_text = "silly kitty"
@@ -32,11 +38,20 @@ theme_override_fonts/font = ExtResource("3_es4n0")
 theme_override_font_sizes/font_size = 42
 text = "Settings:"
 
+[node name="Label3" type="Label" parent="." unique_id=1379355990]
+offset_left = 75.0
+offset_top = 334.0
+offset_right = 424.0
+offset_bottom = 370.0
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 26
+text = "Choose a song!"
+
 [node name="Label" type="Label" parent="." unique_id=1137182291]
-offset_left = 73.0
-offset_top = 127.0
-offset_right = 422.0
-offset_bottom = 163.0
+offset_left = 67.0
+offset_top = 151.0
+offset_right = 416.0
+offset_bottom = 187.0
 theme_override_fonts/font = ExtResource("2_f4mfi")
 theme_override_font_sizes/font_size = 26
 text = "What should we call ya?"
@@ -54,3 +69,37 @@ text = "Back"
 position = Vector2(169, 277)
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=603402300]
+offset_left = 103.0
+offset_top = 391.0
+offset_right = 516.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0.39940286, 0.2016412, 0.41182983, 1)
+theme_override_colors/font_focus_color = Color(0.28696647, 0.13476318, 0.29598013, 1)
+theme_override_colors/font_pressed_color = Color(0.68386924, 0.4053349, 0.6988561, 1)
+theme_override_colors/font_hover_color = Color(0.68235296, 0.40392157, 0.69803923, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.68235296, 0.40392157, 0.69803923, 1)
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 24
+item_count = 4
+popup/item_0/text = "Default"
+popup/item_0/id = 0
+popup/item_1/text = "Rock"
+popup/item_1/id = 1
+popup/item_2/text = "Lofi"
+popup/item_2/id = 2
+popup/item_3/text = "Dramatic"
+popup/item_3/id = 3
+
+[node name="Button" type="Button" parent="." unique_id=456819496]
+offset_left = 720.0
+offset_top = 280.0
+offset_right = 1044.0
+offset_bottom = 366.0
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 24
+text = "View Found Endings"
+
+[connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

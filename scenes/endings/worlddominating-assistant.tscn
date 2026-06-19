@@ -7,7 +7,7 @@
 script = ExtResource("1_s3uif")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["A few years later you grasp the basics", "Soon enough the world is under your control", "Everyone respects cats now and no cat is forced to stay inside!", "ENDING: World Domination"]
+text_array = ["A few years later world dominating is going great!", "Soon enough the world is under your control", "Everyone respects cats now and no cat is forced to stay inside!", "ENDING: World Domination"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=602348862]
 offset_left = -37.0

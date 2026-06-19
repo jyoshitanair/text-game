@@ -7,7 +7,7 @@
 script = ExtResource("1_8louh")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["WELL. That didn't go well for you...", "Turns out he's pretty good at cat fighting. And you got beat up pretty bad.", "Ending: Beaten and Bruised "]
+text_array = ["WELL. That didn't go well for you...", "Turns out he's pretty good at cat fighting. And you got beat up pretty bad.", "ENDING: Beaten and Bruised "]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1654330951]
 offset_left = -37.0

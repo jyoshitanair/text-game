@@ -13,6 +13,19 @@ var visible_characters = null
 var total_type_time = null 
 var urname = "silly kitty"
 var music
+
+#slots
+var freedom = false
+var squished = false
+var safetynet= false
+var butterfly= false
+var beaten= false
+var falldamage= false
+var food= false
+var soclost= false
+var cold= false
+var domination= false
+var crushed = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	music = AudioStreamPlayer.new()

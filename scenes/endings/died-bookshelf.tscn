@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_2fl4m"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_ujwl4"]
 
-[node name="DiedBookshelf" type="Node2D" unique_id=170064609 groups=["ending"]]
+[node name="DiedBookshelf" type="Node2D" unique_id=170064609 groups=["ending", "f_endings"]]
 script = ExtResource("1_2fl4m")
 text_array = ["Yeah. No.", "That's when the bookshelf nearby crashses ontop of you", "But hey atleast you got your beauty sleep!", "Ending: Crushed Dreams"]
 

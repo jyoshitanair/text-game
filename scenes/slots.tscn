@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://bqewtv3evlmym"]
 
+[ext_resource type="Script" uid="uid://c5j4ax4oug7dw" path="res://scripts/slots.gd" id="1_1o26o"]
 [ext_resource type="FontFile" uid="uid://5xoid7wdge1y" path="res://fonts/CodeRider-q2qVq.otf" id="1_bvatn"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="3_xs8oc"]
 
 [node name="Slots" type="Node2D" unique_id=191810732]
+script = ExtResource("1_1o26o")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=683096886]
 offset_left = -72.0
@@ -19,3 +22,116 @@ offset_bottom = 95.0
 theme_override_fonts/font = ExtResource("1_bvatn")
 theme_override_font_sizes/font_size = 42
 text = "Endings Found:"
+
+[node name="freedom" type="Label" parent="." unique_id=651410745]
+offset_left = 56.0
+offset_top = 168.0
+offset_right = 570.0
+offset_bottom = 282.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: Freedom but at what cost?"
+
+[node name="squished" type="Label" parent="." unique_id=348399545]
+offset_left = 60.0
+offset_top = 349.0
+offset_right = 574.0
+offset_bottom = 463.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: squished!"
+
+[node name="safetynet" type="Label" parent="." unique_id=2063880181]
+offset_left = 57.0
+offset_top = 290.0
+offset_right = 571.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: A Safety Net?"
+
+[node name="butterfly" type="Label" parent="." unique_id=1358836415]
+offset_left = 644.0
+offset_top = 234.0
+offset_right = 1158.0
+offset_bottom = 348.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: Butterflies"
+
+[node name="beaten" type="Label" parent="." unique_id=432769875]
+offset_left = 644.0
+offset_top = 306.0
+offset_right = 1158.0
+offset_bottom = 420.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: Beaten and Bruised "
+
+[node name="falldamage" type="Label" parent="." unique_id=1229267227]
+offset_left = 57.0
+offset_top = 232.0
+offset_right = 571.0
+offset_bottom = 346.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: Died from fall damage"
+
+[node name="food" type="Label" parent="." unique_id=146427563]
+offset_left = 55.0
+offset_top = 416.0
+offset_right = 569.0
+offset_bottom = 530.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: bonding over food :3"
+
+[node name="soclost" type="Label" parent="." unique_id=1188348434]
+offset_left = 55.0
+offset_top = 482.0
+offset_right = 569.0
+offset_bottom = 596.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: so close yet so far"
+
+[node name="cold" type="Label" parent="." unique_id=279769748]
+offset_left = 641.0
+offset_top = 172.0
+offset_right = 1155.0
+offset_bottom = 286.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: The cold shoulder"
+
+[node name="domination" type="Label" parent="." unique_id=1461465855]
+offset_left = 643.0
+offset_top = 378.0
+offset_right = 1157.0
+offset_bottom = 492.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "ENDING: World Domination"
+
+[node name="crushed" type="Label" parent="." unique_id=976134188]
+offset_left = 640.0
+offset_top = 450.0
+offset_right = 1154.0
+offset_bottom = 564.0
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 27
+text = "Ending: Crushed Dreams"
+
+[node name="Label4" type="Label" parent="." unique_id=1287933227]
+offset_left = 886.0
+offset_top = 576.0
+offset_right = 1047.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("1_bvatn")
+theme_override_font_sizes/font_size = 40
+text = "New Game"
+
+[node name="pointer" type="Polygon2D" parent="." unique_id=918415783]
+position = Vector2(169, 277)
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)

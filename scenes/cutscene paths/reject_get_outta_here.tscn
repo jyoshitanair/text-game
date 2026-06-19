@@ -1,3 +1,99 @@
 [gd_scene format=3 uid="uid://k760kwxr347w"]
 
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_2a7nh"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_uvpws"]
+
 [node name="RejectGetOuttaHere" type="Node2D" unique_id=1321924485]
+script = ExtResource("1_2a7nh")
+path1 = "res://scenes/cutscene paths/its-dangerous.tscn"
+path2 = "res://scenes/cutscene paths/get_outta_here.tscn"
+text_array = ["what! no no no! you should come with me!", "see you think about it too!", "besides what's wrong with just tryinggg"]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=654385869]
+offset_left = -37.0
+offset_top = -51.0
+offset_right = 1197.0
+offset_bottom = 700.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=758655951]
+offset_left = 2.0
+offset_top = 101.0
+offset_right = 705.0
+offset_bottom = 709.0
+theme_override_fonts/font = ExtResource("2_uvpws")
+theme_override_font_sizes/font_size = 14
+text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠉⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡅⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠸⠀⠑⠀⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢇⣨⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⠁⢃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠰⠀⠀⠀⠀⠀⠑⠦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠏⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡂⠀⠀⠀⠀⠀⠀⠀⠉⠢⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠏⠉⠉⡏⠁⠁⠉⠳⠒⠒⠤⠋⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠑⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⡇⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⡆⠀⠀⠀⠀⠀⡈⢺⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠊⠠⠂⡀⡀⠀⠀
+⠀⠀⠀⠀⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⡟⠀
+⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣜⠎⠀⠀
+⠀⠀⠀⠀⠉⠒⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠋⠁⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠋⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⠃⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠤⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠄⠔⠒⠐⠠⡀⠀⠀⠀⡔⠂⣈⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠂⠉⠀⠁⠀⠀⠈⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡐⠁⠀⠀⠀⠀⠀⠀⠀⠀⢃⠀⠉⠀⠀⠌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠌⠀⢀⠀⠀⢀⠀⠀⠀⠀⠀⠰⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡈⠀⠀⠀⠇⠀⠀⠇⠀⠀⠀⠀⡁⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⢐⠀⠀⢸⠀⠀⠈⡇⠀⠀⠀⠀⠠⠁⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢘⠀⠀⠀⠀⡇⠀⠀⡅⠀⠀⠀⠀⡃⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡄⠀⠀⣇⠀⠀⢧⠀⠀⠀⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠷⠀⠀⠀⠁⠀⠀⠁⠀⢄⣠⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠣⠀⠃⠀⠀⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+
+[node name="Label2" type="RichTextLabel" parent="." unique_id=210882884]
+offset_left = 447.0
+offset_top = 229.0
+offset_right = 1080.0
+offset_bottom = 568.0
+theme_override_fonts/normal_font = ExtResource("2_uvpws")
+theme_override_fonts/bold_font = ExtResource("2_uvpws")
+theme_override_fonts/bold_italics_font = ExtResource("2_uvpws")
+theme_override_fonts/italics_font = ExtResource("2_uvpws")
+theme_override_fonts/mono_font = ExtResource("2_uvpws")
+theme_override_font_sizes/normal_font_size = 35
+text = "meoow..."
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1393892445]
+visible = false
+offset_left = -36.0
+offset_top = -50.0
+offset_right = 1195.0
+offset_bottom = 694.0
+color = Color(0, 0, 0, 1)
+
+[node name="choices" type="Node2D" parent="." unique_id=769888932]
+visible = false
+position = Vector2(0, 70)
+
+[node name="Label4" type="Label" parent="choices" unique_id=2118449832]
+offset_left = 642.0
+offset_top = 335.0
+offset_right = 736.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("2_uvpws")
+theme_override_font_sizes/font_size = 30
+text = "it's dangerous!"
+
+[node name="Label6" type="Label" parent="choices" unique_id=38386438]
+offset_left = 643.0
+offset_top = 434.0
+offset_right = 737.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("2_uvpws")
+theme_override_font_sizes/font_size = 30
+text = "good point. let's go!"
+
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=997178000]
+position = Vector2(1481, 790)
+rotation = 3.1415927
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

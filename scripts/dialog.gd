@@ -17,8 +17,10 @@ var ending= false
 @export var text_array = ["no","sjkfjladjhkjhjkkhjhjkhjkhhjhjhkhjhkjf","ksjdlkfjslf"]
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if text_array[2] == "FAHHHH":
+	if  text_array.size() >= 3 and text_array[2] == "FAHHHH":
 		text_array[2] = "... %s? ........ %s!!!!! No wake up please!"%[Manager.urname,(Manager.urname).to_upper()]
+	if text_array.size() >= 4 and text_array[3] == "FAHHHH":
+		text_array[2] = "Sorry %s. I was looking for something...more"%Manager.urname
 	if self.is_in_group("ending"):
 		ending = true
 	pointer_position = Manager.pointer_position
@@ -191,7 +193,7 @@ func _process(delta: float) -> void:
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠒⢿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣤⠈⣿⣿⣿⣿⣿⣿⣟⡸⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢻⣿⣿⣿⣿⣿⣿⡆⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣦⢽⣟⡿⠿⠛⠉⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠿⠿⠿⠿⠷⠶⠶⠾⠶⠶⠶⠶⠶⠶⠶⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀"
-					if text_array_index==2 and self.name == "Assistant":
+					if (text_array_index==2 and self.name == "Assistant") or (text_array_index==2 and self.name == "What'sInnitForMe"):
 						cat.text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀
@@ -226,6 +228,33 @@ func _process(delta: float) -> void:
 			else:
 				#not normal type
 				if ending: 
+					print(self.get_groups())
+					if self.is_in_group("f_endings"):
+						print("wer're init")
+						if self.name == "CarCrash":
+							Manager.freedom = true
+						if self.name == "DiedBookshelf":
+							Manager.crushed = true
+						if self.name == "FellOffTree":
+							Manager.falldamage= true
+						if self.name == "FightEnding":
+							Manager.beaten= true
+						if self.name == "HappyEscape":
+							Manager.butterfly= true
+						if self.name == "HappyTree":
+							Manager.safetynet= true
+						if self.name == "HeGetsCrushed":
+							Manager.squished= true
+						if self.name == "Hungry":
+							Manager.food= true
+						if self.name == "SadKitty":
+							Manager.soclost= true
+						if self.name == "ShockedRejection":
+							Manager.cold= true
+						if self.name == "WorlddominatingAssistant":
+							Manager.domination= true
+						get_tree().change_scene_to_file("res://scenes/slots.tscn")
+						return
 					if  self.name == "RejectSleep":
 						get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
 						return
@@ -249,9 +278,6 @@ func _process(delta: float) -> void:
 						return
 					if  self.name == "CrossTheStreet":
 						get_tree().change_scene_to_file("res://scenes/endings/car crash.tscn")
-						return
-					if self.get_parent().name == "endings":
-						get_tree().change_scene_to_file("res://scenes/slots.tscn")
 						return
 				if pointer_position == 1 :
 					get_tree().change_scene_to_file(path1)

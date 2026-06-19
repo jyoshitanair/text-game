@@ -1,3 +1,97 @@
 [gd_scene format=3 uid="uid://bog0w1dk1ucs0"]
 
+[ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_vx2ml"]
+[ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_4drax"]
+
 [node name="What\'sInnitForMe" type="Node2D" unique_id=215070908]
+script = ExtResource("1_vx2ml")
+path1 = "res://scenes/endings/worlddominating-assistant.tscn"
+path2 = "res://scenes/endings/shocked-rejection.tscn"
+text_array = ["uh....good point!", "i didn't really think about that.", "HMMMM", "Well. I'm pretty smart! ...I think...", "AND! I have a cookie!", "So what do you say?!"]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=602142095]
+offset_left = -37.0
+offset_top = -51.0
+offset_right = 1197.0
+offset_bottom = 700.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1634326329]
+offset_left = 2.0
+offset_top = 105.0
+offset_right = 705.0
+offset_bottom = 713.0
+theme_override_fonts/font = ExtResource("2_4drax")
+theme_override_font_sizes/font_size = 14
+text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣷⠀⠀⠀⠀⠀⢀⠀
+⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⡆⠀⠀⠀⠖⠁⠀
+⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠋⠀⠔⠉
+⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠤⠤⠤
+⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣠⣤⣤⣼⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠘⣿⣿⣿⣿⠟⠁⠀⠀⠀⠹⣿⣿⣿⣿⣿⠟⠁⠀⠀⠹⣿⣿⡿⡆⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⣿⣿⡇⠀⠀⠀⢠⡆⠀⢸⣿⣿⣿⣿⠀⣤⠀⠀⠀⢸⣿⣷⣷⡇⠀⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣷⡀⠀⠀⠈⠀⠀⣾⣿⣿⣿⣿⡈⠉⠀⠀⠀⣾⣿⣿⡿⡇⠀⠀⠀
+⢀⣀⣀⣀⣿⣿⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣾⣿⣷⣦⣤⣴⣿⣿⣿⣿⣤⠤⢤⣤⡄
+⠈⠉⠉⢉⣙⣿⣿⣿⣿⣿⣿⣿⣿⠉⠉⠉⠉⠉⣿⣿⣿⣿⣿⣿⣿⣿⣇⣀⣀⣀⡀⠀
+⠐⠚⠋⠉⢀⣬⡿⢿⣿⣿⣿⣿⣿⣀⠀⣀⣀⣀⣿⣿⣿⣿⣿⣿⡿⣥⣀⡀⠈⠀⠈⠛
+⠀⠀⠴⠚⠉⠀⠀⠀⠉⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠛⠋⠁⠀⠀⠀⠉⠛⠢⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"
+
+[node name="Label2" type="RichTextLabel" parent="." unique_id=481985930]
+offset_left = 447.0
+offset_top = 229.0
+offset_right = 1080.0
+offset_bottom = 348.0
+theme_override_fonts/normal_font = ExtResource("2_4drax")
+theme_override_fonts/bold_font = ExtResource("2_4drax")
+theme_override_fonts/bold_italics_font = ExtResource("2_4drax")
+theme_override_fonts/italics_font = ExtResource("2_4drax")
+theme_override_fonts/mono_font = ExtResource("2_4drax")
+theme_override_font_sizes/normal_font_size = 35
+text = "meoow..."
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1108486666]
+visible = false
+offset_left = -36.0
+offset_top = -50.0
+offset_right = 1195.0
+offset_bottom = 694.0
+color = Color(0, 0, 0, 1)
+
+[node name="choices" type="Node2D" parent="." unique_id=1997730261]
+visible = false
+position = Vector2(0, 70)
+
+[node name="Label4" type="Label" parent="choices" unique_id=416093289]
+offset_left = 642.0
+offset_top = 335.0
+offset_right = 736.0
+offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("2_4drax")
+theme_override_font_sizes/font_size = 30
+text = "uhhh sure."
+
+[node name="Label6" type="Label" parent="choices" unique_id=1204182709]
+offset_left = 643.0
+offset_top = 434.0
+offset_right = 737.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("2_4drax")
+theme_override_font_sizes/font_size = 30
+text = "so....no"
+
+[node name="pointer" type="Polygon2D" parent="choices" unique_id=2071172581]
+position = Vector2(1481, 790)
+rotation = 3.1415927
+color = Color(0.8179707, 0.66060704, 0.22640124, 1)
+polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

@@ -10,3 +10,16 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("enter"):
 		Manager.next_scene_in_queue = "res://scenes/mainmenu.tscn"
 		get_tree().change_scene_to_file("res://scenes/loading.tscn")
+func _on_option_button_item_selected(index: int) -> void:
+	if index == 0: 
+		Manager.music.stream = load("res://peakmusic/outlawcreative-you-call-it-chaos-i-call-it-grace-392666.mp3")
+	if index == 1: 
+		Manager.music.stream = load("res://peakmusic/alex-morgan-rock-rock-music-545492.mp3")
+	if index == 2: 
+		Manager.music.stream = load("res://peakmusic/purrplecat-cat-nap-lofi-hiphop-beats-199252.mp3")
+	if index == 3: 
+		Manager.music.stream = load("res://peakmusic/the_mountain-dramatic-dramatic-music-508006.mp3")
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/slots.tscn")
