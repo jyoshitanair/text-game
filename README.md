@@ -1,12 +1,9 @@
-# cat-mayhem
+# Cat Mayhem
 ##### you meet a cat yearning for the outdoors - will you join him or not?
 
 ---
 
 ### Contents
-
-🐱 [Access](#access)
-
 
 🐱 [Information](#information)
 
@@ -23,7 +20,9 @@
 🐱 [Credits](#credits)
 
 🐱 [Screenshots](#screenshots)
-# Information
+
+
+## Information
 
 ---
 
@@ -35,9 +34,11 @@
 
 🐱 **Made With:** Godot Version 4.6.1 Stable gd script and itch.io!
 
-#Description
+
+## Description
 
 ---
+
 You are a cat that just moved in to their new purrever home! (yes the puns are necessary).
 
 You find out that you have a kitty roomate who is absolutely obssessed with the ideas of going outside.
@@ -45,7 +46,8 @@ In this game you will have a variety of different activities to do with your kit
 It's very inspired by those old terminal games - but made better? and it has ASCII code art!
 It is also a visual novel!
 
-#Gameplay
+
+## Gameplay
 
 ---
 
@@ -57,7 +59,8 @@ It is also a visual novel!
 
 🐱 the only time you need to click or type is in the **settings menu!**
 
-#Features
+
+## Features
 
 ---
 
@@ -79,13 +82,16 @@ It is also a visual novel!
 
 🐱 **22 different paths** (scenes) that you can go to! 
 
-#Ai-Use
+
+## Ai-Use
 
 🐱 I only used Gemini for very very minimal debugging and all code is written by me!
 
 🐱 No media is AI generated ofc!
 
-#Learning
+
+## Learning
+
 
 🐱 Honestly a lot of this was old news to me but I DID learn how to make a triangle shape in godot! (super impressive fr)
 
@@ -94,9 +100,11 @@ It is also a visual novel!
 🐱 My first time making a loading screen? I think it's pretty cool might have to do it again (UwU)
 
 
-#Credits
+
+## Credits
 
 ---
+
 
 1) Fonts
 
@@ -116,7 +124,7 @@ It is also a visual novel!
 	
 	🐱 Rock - Rock Music by **alex-morgan** on pixabay : https://pixabay.com/music/rock-rock-rock-music-545492/
 
-#Screenshots
+## Screenshots
 
 ---
 
