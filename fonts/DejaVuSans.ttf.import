@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://5xoid7wdge1y"
-path="res://.godot/imported/CodeRider-q2qVq.otf-6581f8c64a7b8b00623509f1ed827d8a.fontdata"
+uid="uid://djup6rj5vu1fd"
+path="res://.godot/imported/DejaVuSans.ttf-178e8f184caa85854adec7368964cca3.fontdata"
 
 [deps]
 
-source_file="res://fonts/CodeRider-q2qVq.otf"
-dest_files=["res://.godot/imported/CodeRider-q2qVq.otf-6581f8c64a7b8b00623509f1ed827d8a.fontdata"]
+source_file="res://fonts/DejaVuSans.ttf"
+dest_files=["res://.godot/imported/DejaVuSans.ttf-178e8f184caa85854adec7368964cca3.fontdata"]
 
 [params]
 
@@ -27,16 +27,10 @@ subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
-fallbacks=[Resource("uid://djup6rj5vu1fd", "res://fonts/DejaVuSans.ttf")]
+fallbacks=[]
 Compress=null
 compress=true
-preload=[{
-"chars": [],
-"glyphs": [],
-"name": "New Configuration",
-"size": Vector2i(16, 0),
-&"variation_embolden": 0.0
-}]
+preload=[]
 language_support={}
 script_support={}
 opentype_features={}
