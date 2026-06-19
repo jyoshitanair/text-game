@@ -153,26 +153,16 @@ It is also a visual novel!
 
 <img width="702" height="410" alt="loading-cat" src="https://github.com/user-attachments/assets/b29e490a-18ea-4502-834e-104ba0323996" />
 
-#### Other Images
+#### Bonus Images
 <img width="267" height="437" alt="angry-cat" src="https://github.com/user-attachments/assets/a753aeaf-7d80-4863-9e26-db49c854cd1f" />
 
 <img width="340" height="395" alt="wierdcat" src="https://github.com/user-attachments/assets/2c943a54-3f6d-49c7-859f-94f5c41365e7" />
 
 <img width="266" height="436" alt="sad-cat" src="https://github.com/user-attachments/assets/5dcf06dc-700e-4fe1-9009-4341dc7eaaa5" />
 
-<img width="542" height="301" alt="cat-main" src="https://github.com/user-attachments/assets/47032213-4106-4209-af74-a334b5c73ff7" />
-
-<img width="270" height="431" alt="can-uwu" src="https://github.com/user-attachments/assets/7ab1c28c-d14c-4217-a659-16b28da4e385" />
-
 <img width="312" height="450" alt="shocked-cat" src="https://github.com/user-attachments/assets/759cbdb0-a8ec-4862-a0a1-424afb373ede" />
 
 <img width="262" height="427" alt="cat-normal" src="https://github.com/user-attachments/assets/8588480e-ed37-407b-ba08-82e9e01c91b4" />
-
-<img width="272" height="412" alt="oooh-cat" src="https://github.com/user-attachments/assets/bf1a4f60-0fea-46b4-b446-b886496fff1a" />
-
-<img width="346" height="480" alt="tree-png" src="https://github.com/user-attachments/assets/d3ff05c1-5fd1-4018-bdb7-29143e8e5a87" />
-
-<img width="282" height="417" alt="ahh-cat" src="https://github.com/user-attachments/assets/7872ca19-0f96-43e0-b59b-a788dc87f0af" />
 
 <img width="401" height="322" alt="cat-sleep" src="https://github.com/user-attachments/assets/7f2a259f-8f79-4ea1-aa1b-4420485884ef" />
 
