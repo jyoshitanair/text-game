@@ -18,16 +18,22 @@ var ending= false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if  text_array.size() >= 3 and text_array[2] == "FAHHHH":
-		text_array[2] = "... %s? ........ %s!!!!! No wake up please!"%[Manager.urname,(Manager.urname).to_upper()]
+		text_array[2] = "... %s? ........ %s!!!!! no wake up PLEASE!"%[Manager.urname,(Manager.urname).to_upper()]
 	if text_array.size() >= 4 and text_array[3] == "FAHHHH":
-		text_array[2] = "Sorry %s. I was looking for something...more"%Manager.urname
+		text_array[3] = "sorry %s. i don't really have a sweet tooth."%Manager.urname
+	if text_array.size() >= 5 and text_array[4] == "FAHHHH":
+		text_array[4] = "%s? nice to meet ya. i'm cat"%Manager.urname
+	if text_array.size() >= 6 and text_array[5] == "FAHHHH":
+		text_array[5] = "would you like to go bird watching with me %s?"%Manager.urname
+	if text_array.size() >= 4 and text_array[3] == "FAHHHHR":
+		text_array[3] = "hey %s ..."%Manager.urname
 	if self.is_in_group("ending"):
 		ending = true
 	pointer_position = Manager.pointer_position
 	if pointer_position ==1:
-		pointer.position = Vector2(1481.0,690.0)
+		pointer.position = Vector2(1481.0,678.0)
 	else:
-		pointer.position = Vector2(1481.0,790.0)
+		pointer.position = Vector2(1481.0,780.0)
 	text_array_index = Manager.text_array_index
 	normal_type = Manager.normal_type
 	tween_type = Manager.tween_type
@@ -60,7 +66,7 @@ func _process(delta: float) -> void:
 			Manager.next_scene_in_queue = "res://scenes/mainmenu.tscn"
 			Manager.next_pause = scene_file_path
 			Manager.paused  = true
-			#stupid other settings
+			#stupid other settings 
 			if tween_type and tween_type.is_valid():
 				Manager.total_type_time = total_type_time - (tween_type.get_total_elapsed_time())
 			Manager.visible_characters = main_text.visible_characters
@@ -218,7 +224,6 @@ func _process(delta: float) -> void:
 ⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠃⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀"	
 					if text_array_index >= text_array.size():
-						print("FULL")
 						normal_type = false 	
 						if not ending: 
 							choices.show()
@@ -230,7 +235,6 @@ func _process(delta: float) -> void:
 				if ending: 
 					print(self.get_groups())
 					if self.is_in_group("f_endings"):
-						print("wer're init")
 						if self.name == "CarCrash":
 							Manager.freedom = true
 						if self.name == "DiedBookshelf":
@@ -254,41 +258,56 @@ func _process(delta: float) -> void:
 						if self.name == "WorlddominatingAssistant":
 							Manager.domination= true
 						get_tree().change_scene_to_file("res://scenes/slots.tscn")
+						reset_manager()
 						return
 					if  self.name == "RejectSleep":
 						get_tree().change_scene_to_file("res://scenes/endings/fight-ending.tscn")
+						reset_manager()
+						return
+					if  self.name == "WakeUp":
+						get_tree().change_scene_to_file("res://scenes/endings/he-gets-crushed.tscn")
+						reset_manager()
 						return
 					if  self.name == "Assitant":
 						get_tree().change_scene_to_file("res://scenes/endings/worlddominating-assistant.tscn")
+						reset_manager()
 						return
 					if  self.name == "Who'sGonnaFeedYou":
 						get_tree().change_scene_to_file("res://scenes/endings/hungry.tscn")
+						reset_manager()
 						return
 					if  self.name == "KeepSleeping":
 						get_tree().change_scene_to_file("res://scenes/endings/died-bookshelf.tscn")
+						reset_manager()
 						return
 					if  self.name == "YouFirstLoser":
 						get_tree().change_scene_to_file("res://scenes/endings/happy-tree.tscn")
+						reset_manager()
 						return
 					if  self.name == "YeahIAgree(feedingAlt)":
 						get_tree().change_scene_to_file("res://scenes/endings/happy-escape.tscn")
+						reset_manager()
 						return
-					if  self.name == "i-first":
+					if  self.name == "IFirst":
 						get_tree().change_scene_to_file("res://scenes/endings/fell-off-tree.tscn")
+						reset_manager()
 						return
 					if  self.name == "CrossTheStreet":
 						get_tree().change_scene_to_file("res://scenes/endings/car crash.tscn")
+						reset_manager()
 						return
 				if pointer_position == 1 :
+					reset_manager()
 					get_tree().change_scene_to_file(path1)
 				if pointer_position == 2:
+					reset_manager()
 					get_tree().change_scene_to_file(path2)
 		if Input.is_action_just_pressed("down") and normal_type == false:
-			if pointer.position == Vector2(1481.0,690.0):
-				pointer.position = Vector2(1481.0,790.0)
+			if pointer.position == Vector2(1481.0,678.0):
+				pointer.position = Vector2(1481.0,780.0)
 				pointer_position = 2
-			elif pointer.position == Vector2(1481.0,790.0):
-				pointer.position = Vector2(1481.0,690.0)
+			elif pointer.position == Vector2(1481.0,780.0):
+				pointer.position = Vector2(1481.0,678.0)
 				pointer_position = 1
 func typeity_type() -> void: 
 	type_finished = false
@@ -307,4 +326,14 @@ func typeity_type() -> void:
 	tween_type.tween_property(main_text, "visible_characters",main_text.text.length(),total_type_time)
 	await tween_type.finished
 	type_finished = true
-	
+func reset_manager() -> void:
+	Manager.total_type_time = null
+	Manager.visible_characters = null
+	Manager.pointer_position = 1
+	Manager.normal_type = true
+	Manager.tween_type = null
+	Manager.type_finished = null
+	Manager.text_array_index = 0
+	Manager.can_move= false
+	Manager.tween_type = null
+	Manager.type_finished = null

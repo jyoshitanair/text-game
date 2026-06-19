@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_dj2qg"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_m41pc"]
 
-[node name="FellOffTree" type="Node2D" unique_id=1608149821 groups=["ending"]]
+[node name="FellOffTree" type="Node2D" unique_id=1608149821 groups=["ending", "f_endings"]]
 script = ExtResource("1_dj2qg")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["you crash to the ground", "everything starts to fade to black...", "FAHHHH", "You smile before everything suddenly goes blank.", "ENDING: Died from fall damage"]
+text_array = ["you crash to the ground", "everything starts to fade to black...", "FAHHHH", "you smile before everything suddenly goes blank.", "ENDING: died from fall damage"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1933500939]
 offset_left = -37.0

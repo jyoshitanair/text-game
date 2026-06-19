@@ -5,7 +5,7 @@
 
 [node name="WakeUp" type="Node2D" unique_id=1347684457 groups=["ending"]]
 script = ExtResource("1_17if2")
-text_array = ["You are startled awake and meow in horror", "you notice the bookshelf flying down towards you and him", "you meow loudly and barely manage to dodge it..."]
+text_array = ["you are startled awake and meow in horror", "you notice the bookshelf flying down towards you and cat", "you meow loudly and barely manage to dodge it..."]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=187123188]
 offset_left = -37.0

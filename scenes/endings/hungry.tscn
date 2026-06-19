@@ -7,7 +7,7 @@
 script = ExtResource("1_pgok7")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["He laughs sheepishly.", "Yeah speaking of food. I'm kinda hungry.", "Wanna steal something from the kitchen?", "ENDING: bonding over food :3"]
+text_array = ["cat laughs sheepishly.", "yeah speaking of food. i'm kinda hungry.", "wanna steal something from the kitchen?", "ENDING: bonding over food :3"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=832493841]
 offset_left = -37.0

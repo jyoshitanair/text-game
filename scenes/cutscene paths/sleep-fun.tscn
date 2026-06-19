@@ -79,7 +79,7 @@ offset_right = 736.0
 offset_bottom = 390.0
 theme_override_fonts/font = ExtResource("2_cuu3y")
 theme_override_font_sizes/font_size = 30
-text = "Nah"
+text = "nahh i'm good"
 
 [node name="Label6" type="Label" parent="choices" unique_id=1363575865]
 offset_left = 643.0
@@ -88,7 +88,7 @@ offset_right = 737.0
 offset_bottom = 489.0
 theme_override_fonts/font = ExtResource("2_cuu3y")
 theme_override_font_sizes/font_size = 30
-text = "Really?"
+text = "really?"
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=116298918]
 position = Vector2(1481, 790)

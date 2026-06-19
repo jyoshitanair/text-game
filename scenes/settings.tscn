@@ -4,6 +4,9 @@
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_f4mfi"]
 [ext_resource type="FontFile" uid="uid://5xoid7wdge1y" path="res://fonts/CodeRider-q2qVq.otf" id="3_es4n0"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wm04"]
+bg_color = Color(0.20784314, 0.05882353, 0.26666668, 0.42352942)
+
 [node name="Settings" type="Node2D" unique_id=277099554]
 script = ExtResource("1_6wm04")
 
@@ -101,5 +104,21 @@ theme_override_fonts/font = ExtResource("2_f4mfi")
 theme_override_font_sizes/font_size = 24
 text = "View Found Endings"
 
+[node name="Button2" type="Button" parent="." unique_id=1150828470]
+offset_left = 526.0
+offset_top = 205.0
+offset_right = 609.0
+offset_bottom = 257.0
+theme_override_fonts/font = ExtResource("2_f4mfi")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_6wm04")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6wm04")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6wm04")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_6wm04")
+theme_override_styles/focus = SubResource("StyleBoxFlat_6wm04")
+text = "Ok?
+"
+
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

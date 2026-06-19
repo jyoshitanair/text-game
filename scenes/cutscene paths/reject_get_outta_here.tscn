@@ -7,7 +7,7 @@
 script = ExtResource("1_2a7nh")
 path1 = "res://scenes/cutscene paths/its-dangerous.tscn"
 path2 = "res://scenes/cutscene paths/get_outta_here.tscn"
-text_array = ["what! no no no! you should come with me!", "see you think about it too!", "besides what's wrong with just tryinggg"]
+text_array = ["what! no no no! you should come with me!", "you've thought about it before! that's enough!", "besides what's wrong with just tryinggg!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=654385869]
 offset_left = -37.0

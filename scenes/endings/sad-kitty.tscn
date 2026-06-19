@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_5ob54"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_xywt2"]
 
-[node name="SadKitty" type="Node2D" unique_id=712384703 groups=["ending"]]
+[node name="SadKitty" type="Node2D" unique_id=712384703 groups=["ending", "f_endings"]]
 script = ExtResource("1_5ob54")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"

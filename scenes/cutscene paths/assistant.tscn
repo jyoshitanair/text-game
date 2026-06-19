@@ -7,7 +7,7 @@
 script = ExtResource("1_fmtju")
 path1 = "res://scenes/endings/worlddominating-assistant.tscn"
 path2 = "res://scenes/endings/worlddominating-assistant.tscn"
-text_array = ["Seriously! Okay yeah ! Let's go do this!", "...", "sooo uhhh....what do we do first?!", "I'm kinda new to all this \"world dominating\""]
+text_array = ["seriously!? okay yeah ! let's go do this!", "...", "sooo uhhh....what do we do first?!", "i'm kinda new to all this \"world dominating\""]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=822736345]
 offset_left = -37.0

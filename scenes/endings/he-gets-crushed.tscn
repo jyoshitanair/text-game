@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_mkles"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_qxaqj"]
 
-[node name="HeGetsCrushed" type="Node2D" unique_id=126117710 groups=["ending"]]
+[node name="HeGetsCrushed" type="Node2D" unique_id=126117710 groups=["ending", "f_endings"]]
 script = ExtResource("1_mkles")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["Your eyes widen as the bookself crashes down onto him", "with a splat he's gone.", "ENDING: squished!"]
+text_array = ["your eyes widen as the bookself crashes down onto him", "with a splat he's gone.", "ENDING: squished!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1130208720]
 offset_left = -37.0

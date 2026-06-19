@@ -7,7 +7,7 @@
 script = ExtResource("1_klxk6")
 path1 = "res://scenes/cutscene paths/sometimes-wonder.tscn"
 path2 = "res://scenes/cutscene paths/its-dangerous.tscn"
-text_array = ["Here we are. ", "Its kinda plain I guess. But looking outside always makes me happy", "...", "hey cat.", "do you ever wonder what's it's like to actually...be out there?"]
+text_array = ["okay! here we are. ", "its kinda plain i guess. but looking outside always makes me happy", "...", "FAHHHHR", "do you ever wonder what's it's like to actually...be outside?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=645738613]
 offset_left = -37.0
@@ -20,7 +20,7 @@ color = Color(0, 0, 0, 1)
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
-offset_bottom = 348.0
+offset_bottom = 487.0
 theme_override_fonts/normal_font = ExtResource("2_k1dwu")
 theme_override_fonts/bold_font = ExtResource("2_k1dwu")
 theme_override_fonts/bold_italics_font = ExtResource("2_k1dwu")
@@ -91,7 +91,7 @@ theme_override_font_sizes/font_size = 30
 text = "It's dangerous."
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=1838137565]
-position = Vector2(1481, 790)
+position = Vector2(1481, 678)
 rotation = 3.1415927
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931.00006, 325.6629, 931, 348)

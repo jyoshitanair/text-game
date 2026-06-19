@@ -5,7 +5,7 @@
 
 [node name="Who\'sGonnaFeedYou" type="Node2D" unique_id=346042095 groups=["ending"]]
 script = ExtResource("1_kcy6r")
-text_array = ["What...oh good point I guess.", "I do really like the food here.", "his stomach grumbles"]
+text_array = ["what...oh good point i guess.", "i do really like the food here.", "cat's stomach grumbles"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=267861414]
 offset_left = -37.0

@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_vjmg5"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_yedtq"]
 
-[node name="HappyTree" type="Node2D" unique_id=718850452 groups=["ending"]]
+[node name="HappyTree" type="Node2D" unique_id=718850452 groups=["ending", "f_endings"]]
 script = ExtResource("1_vjmg5")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["You stare at him hesitantly", "Cmon! Don't be scared. I'll catch you if you fall", "With a grunt you decide to follow him up", "Soon enough you're almost at the top", "That's when you suddenly loose your footing - but he's there to catch you", "You're so clumsy! he laughs", "ENDING: A Safety Net?"]
+text_array = ["you stare at him hesitantly", "c'mon! don't be scared. I'll catch you if you fall! cat grins", "with a grunt you decide to follow him up", "soon enough you're almost at the top", "that's when you suddenly loose your footing - but cat's there to catch you", "you're so clumsy! cat laughs", "ENDING: a safety net?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1415702105]
 offset_left = -37.0

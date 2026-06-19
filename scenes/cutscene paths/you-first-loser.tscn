@@ -5,7 +5,7 @@
 
 [node name="YouFirstLoser" type="Node2D" unique_id=318131504 groups=["ending"]]
 script = ExtResource("1_kmjsf")
-text_array = ["Hey! I'm not a loser!", "But since your such a scardie cat - I'll go first!", "He begins to climb the tree with ease", "Wow! I'm actually pretty good at this. I'm a natural", "He sit up on the tree grinning. Cmon! Join me!"]
+text_array = ["hey! i'm not a loser!", "but since your such a scaredy cat - i'll go first!", "he begins to climb the tree with ease", "wow! i'm actually pretty good at this. i'm a natural", "cat sits up on the tree grinning. c'mon! join me!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1970436892]
 offset_left = -37.0

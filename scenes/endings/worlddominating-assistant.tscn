@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_s3uif"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_mjqi6"]
 
-[node name="WorlddominatingAssistant" type="Node2D" unique_id=346465309 groups=["ending"]]
+[node name="WorlddominatingAssistant" type="Node2D" unique_id=346465309 groups=["ending", "f_endings"]]
 script = ExtResource("1_s3uif")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["A few years later world dominating is going great!", "Soon enough the world is under your control", "Everyone respects cats now and no cat is forced to stay inside!", "ENDING: World Domination"]
+text_array = ["a few years later world dominating is going great!", "soon enough the world is under your control", "everyone respects cats now and no cat is forced to stay inside!", "ENDING: world domination"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=602348862]
 offset_left = -37.0

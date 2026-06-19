@@ -5,7 +5,7 @@
 
 [node name="CrossTheStreet" type="Node2D" unique_id=892250313 groups=["ending"]]
 script = ExtResource("1_46hc5")
-text_array = ["The two of you begin to cross the street.", "Ah this feels so nice! And I feel so free!", "VROOOOMMMMMM", "woooosshhhh. a big red car goes by"]
+text_array = ["the two of you begin to cross the street.", "ahhhh... this feels so nice! and i feel so free!", "VROOOOMMMMMM", "woooosshhhh. a big red car goes by"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=351140855]
 offset_left = -37.0

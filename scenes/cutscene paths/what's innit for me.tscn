@@ -7,7 +7,7 @@
 script = ExtResource("1_vx2ml")
 path1 = "res://scenes/endings/worlddominating-assistant.tscn"
 path2 = "res://scenes/endings/shocked-rejection.tscn"
-text_array = ["uh....good point!", "i didn't really think about that.", "HMMMM", "Well. I'm pretty smart! ...I think...", "AND! I have a cookie!", "So what do you say?!"]
+text_array = ["uh....good point!", "i didn't really think about that.", "HMMMM...", "well. i'm pretty smart! ...i think...", "AND! i have a cookie! i'll give it to you!", "so what do you say?!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=602142095]
 offset_left = -37.0
@@ -51,7 +51,7 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
-offset_bottom = 348.0
+offset_bottom = 532.0
 theme_override_fonts/normal_font = ExtResource("2_4drax")
 theme_override_fonts/bold_font = ExtResource("2_4drax")
 theme_override_fonts/bold_italics_font = ExtResource("2_4drax")

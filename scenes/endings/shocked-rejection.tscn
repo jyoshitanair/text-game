@@ -3,11 +3,11 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_s8yg6"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_m7m02"]
 
-[node name="ShockedRejection" type="Node2D" unique_id=1826556630 groups=["ending"]]
+[node name="ShockedRejection" type="Node2D" unique_id=1826556630 groups=["ending", "f_endings"]]
 script = ExtResource("1_s8yg6")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["WHATTT?!", "Why?! Please I promise that i'll be a reallllyyy good partner in crime!", "You shake your head no", "FAHHHH", "ENDING: The cold shoulder"]
+text_array = ["WHATTT?!", "why?! please i promise that i'll be a reallllyyy good partner in crime!", "you shake your head no", "FAHHHH", "ENDING: the cold shoulder"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=232982568]
 offset_left = -37.0

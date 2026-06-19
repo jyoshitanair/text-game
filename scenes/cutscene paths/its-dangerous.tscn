@@ -7,7 +7,7 @@
 script = ExtResource("1_6w4pm")
 path1 = "res://scenes/cutscene paths/decapitated-cat-head.tscn"
 path2 = "res://scenes/cutscene paths/hawk.tscn"
-text_array = ["What?! Why would it be dangerous", "Think about all the birds and butterflies out there!", "...what have YOU ever seen that's \"dangerous\"?!"]
+text_array = ["what?! why would it be dangerous", "think about all the birds and butterflies out there!", "...what have YOU even seen that's \"dangerous\"?!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1541545775]
 offset_left = -37.0

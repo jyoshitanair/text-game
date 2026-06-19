@@ -5,7 +5,7 @@
 
 [node name="YeahIAgree(feedingAlt)" type="Node2D" unique_id=104929977 groups=["ending"]]
 script = ExtResource("1_f68eh")
-text_array = ["Seriously?!", "Okay then we should start exploring! Right now!", "He drags you through a hole behind the bookshelf", "I've been planning this forever!"]
+text_array = ["yeahh that's more like it!", "we should start exploring! right now!", "cat drags you through a hole behind a bookshelf", "i've been planning this forever!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=680862716]
 offset_left = -37.0

@@ -7,7 +7,7 @@
 script = ExtResource("1_d1wpf")
 path1 = "res://scenes/cutscene paths/reject_get_outta_here.tscn"
 path2 = "res://scenes/cutscene paths/get_outta_here.tscn"
-text_array = ["really! yeah i know i hate being cooped up in here too!", "the outdoors is just so much more free. and we can FEEL everything!", "honestly....do you just wanna get outta here?"]
+text_array = ["really! me too! ", "it just looks so much brighter out there! and not to mention we'd be FREE!", "it'd be purrfect right?!", ". . .", "honestly....do you just wanna get outta here?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=718540010]
 offset_left = -37.0
@@ -51,7 +51,7 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
-offset_bottom = 379.0
+offset_bottom = 514.0
 theme_override_fonts/normal_font = ExtResource("2_6f1cw")
 theme_override_fonts/bold_font = ExtResource("2_6f1cw")
 theme_override_fonts/bold_italics_font = ExtResource("2_6f1cw")

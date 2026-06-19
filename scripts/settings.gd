@@ -1,4 +1,5 @@
 extends Node2D
+@onready var text_edit: TextEdit = $TextEdit
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,4 +23,9 @@ func _on_option_button_item_selected(index: int) -> void:
 
 
 func _on_button_pressed() -> void:
+	Manager.from_settings = true
 	get_tree().change_scene_to_file("res://scenes/slots.tscn")
+
+#submit name
+func _on_button_2_pressed() -> void:
+	Manager.urname = text_edit.text

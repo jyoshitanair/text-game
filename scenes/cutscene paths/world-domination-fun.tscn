@@ -7,7 +7,7 @@
 script = ExtResource("1_wop6a")
 path1 = "res://scenes/cutscene paths/what's innit for me.tscn"
 path2 = "res://scenes/cutscene paths/assistant.tscn"
-text_array = ["you do...world domination for fun?!", "What! That's way more fun than bird watching.", "Can i pretty please come along one day?!"]
+text_array = ["you do...world domination for fun?!", "what! that's way more fun than bird watching.", "can i pretty please come along?!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1725036239]
 offset_left = -37.0

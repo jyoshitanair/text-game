@@ -7,7 +7,7 @@
 script = ExtResource("1_pkx4w")
 path1 = "res://scenes/cutscene paths/yes-birdwatching.tscn"
 path2 = "res://scenes/cutscene paths/no-birdwatching.tscn"
-text_array = ["meooowwww....", "human brought in another cat?", "how...intresting", "would you like to go bird watching with me cat?"]
+text_array = ["meooowwww....", "huh. human brought another cat home? ", "how...intresting", "what's your name?", "FAHHHH", "FAHHHH"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1521870883]
 offset_left = -37.0
@@ -79,7 +79,7 @@ offset_right = 736.0
 offset_bottom = 390.0
 theme_override_fonts/font = ExtResource("2_36pgd")
 theme_override_font_sizes/font_size = 30
-text = "Yes"
+text = "yes"
 
 [node name="Label6" type="Label" parent="choices" unique_id=1767324370]
 offset_left = 643.0
@@ -88,7 +88,7 @@ offset_right = 737.0
 offset_bottom = 489.0
 theme_override_fonts/font = ExtResource("2_36pgd")
 theme_override_font_sizes/font_size = 30
-text = "No"
+text = "no"
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=1176348713]
 position = Vector2(1481, 790)

@@ -7,7 +7,7 @@
 script = ExtResource("1_cot53")
 path1 = "res://scenes/cutscene paths/keep-sleeping.tscn"
 path2 = "res://scenes/cutscene paths/wake-up.tscn"
-text_array = ["okay here we are!", "isn't this the most purrfect spot out here", "----", "Soon the two fall into a deep sleep", "Quite a bit of time passes...then....", "BANG!"]
+text_array = ["okay here we are!", "isn't this the most purrfect spot out there", "----", "soon the two fall into a deep sleep", "quite a bit of time passes...then....", "BANG!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=973409409]
 offset_left = -37.0

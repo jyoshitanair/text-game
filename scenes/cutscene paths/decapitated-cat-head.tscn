@@ -7,7 +7,7 @@
 script = ExtResource("1_0adwa")
 path1 = "res://scenes/cutscene paths/who's gonna feed you.tscn"
 path2 = "res://scenes/cutscene paths/yeah i agree (feeding alt).tscn"
-text_array = ["You saw WHAT?!", "yeah no no no i do not want to become a decapitated cat head", "....", "But still....don't you wonder how big the world is.", "and it looks so much nicer than this stuffy home..."]
+text_array = ["you saw WHAT?!", "yeah no no no i do not want to become a decapitated cat head", "....", "still....don't you wonder how big the world is outside this prision?!", "and it looks so much nicer than this stuffy home..."]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=383554493]
 offset_left = -37.0
@@ -53,7 +53,7 @@ text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣦⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
-offset_bottom = 348.0
+offset_bottom = 516.0
 theme_override_fonts/normal_font = ExtResource("2_gy5nq")
 theme_override_fonts/bold_font = ExtResource("2_gy5nq")
 theme_override_fonts/bold_italics_font = ExtResource("2_gy5nq")

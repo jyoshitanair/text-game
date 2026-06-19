@@ -7,7 +7,7 @@
 script = ExtResource("1_6rvnf")
 path1 = "res://scenes/cutscene paths/i-first.tscn"
 path2 = "res://scenes/cutscene paths/you-first-loser.tscn"
-text_array = ["okay! that's a pretty tall tree though!", "oh look theres a birdy up there! cmon let's hurry", "do you wanna go first or should I?"]
+text_array = ["okay! that's a pretty tall tree though!", "oh look! there's a birdy up there! c'mon let's hurry", "do you wanna go first or should i?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=986703743]
 offset_left = -37.0
@@ -79,7 +79,7 @@ offset_right = 736.0
 offset_bottom = 390.0
 theme_override_fonts/font = ExtResource("2_w8nnu")
 theme_override_font_sizes/font_size = 30
-text = "ill go!"
+text = "i'll go!"
 
 [node name="Label6" type="Label" parent="choices" unique_id=372299718]
 offset_left = 643.0
@@ -88,7 +88,7 @@ offset_right = 737.0
 offset_bottom = 489.0
 theme_override_fonts/font = ExtResource("2_w8nnu")
 theme_override_font_sizes/font_size = 30
-text = "let me go first loser"
+text = "you can go first loser"
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=67657883]
 position = Vector2(1481, 790)

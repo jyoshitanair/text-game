@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://dl85niiqcjx50" path="res://scripts/dialog.gd" id="1_2i167"]
 [ext_resource type="FontFile" uid="uid://by5bp1yf8rtbh" path="res://fonts/CsMorcantMonoRegularDemo-8O7Vg.otf" id="2_tqtla"]
 
-[node name="IFirst" type="Node2D" unique_id=1781428926]
+[node name="IFirst" type="Node2D" unique_id=1781428926 groups=["ending"]]
 script = ExtResource("1_2i167")
-text_array = ["it's pretty far up.", "but you keep climbing - the birds are almost in sight", "suddenly you loose your footing!", "AHHHHHH"]
+text_array = ["it's pretty far up.", "but you keep climbing - the birds are almost in sight!", "suddenly you loose your footing!", "AHHHHHH!!!!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=854133246 groups=["ending"]]
 offset_left = -37.0

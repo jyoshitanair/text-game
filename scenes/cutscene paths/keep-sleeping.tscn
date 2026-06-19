@@ -7,7 +7,7 @@
 script = ExtResource("1_m4awv")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["You decide to keep sleeping", "After all it's warm and what's the worst that could happen?", "...Right?"]
+text_array = ["you decide to keep sleeping", "after all it's warm and what's the worst that could happen?", "...nothing too bad right?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1247000553]
 offset_left = -37.0

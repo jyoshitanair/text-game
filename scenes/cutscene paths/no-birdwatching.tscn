@@ -7,7 +7,7 @@
 script = ExtResource("1_7cr1f")
 path1 = "res://scenes/cutscene paths/sleep-fun.tscn"
 path2 = "res://scenes/cutscene paths/world-domination-fun.tscn"
-text_array = ["What? You DON'T want to go to the patio?", "What do you even do for fun then?"]
+text_array = ["what? why WOULDN't you wanna go birdwatching! the patio is soo nice!", "what do you even do for fun then?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1855844131]
 offset_left = -37.0
@@ -51,7 +51,7 @@ text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦
 offset_left = 447.0
 offset_top = 229.0
 offset_right = 1080.0
-offset_bottom = 348.0
+offset_bottom = 568.0
 theme_override_fonts/normal_font = ExtResource("2_wl6k7")
 theme_override_fonts/bold_font = ExtResource("2_wl6k7")
 theme_override_fonts/bold_italics_font = ExtResource("2_wl6k7")
@@ -79,7 +79,7 @@ offset_right = 736.0
 offset_bottom = 390.0
 theme_override_fonts/font = ExtResource("2_wl6k7")
 theme_override_font_sizes/font_size = 30
-text = "Sleep"
+text = "sleep"
 
 [node name="Label6" type="Label" parent="choices" unique_id=2055805900]
 offset_left = 643.0
@@ -88,7 +88,7 @@ offset_right = 737.0
 offset_bottom = 489.0
 theme_override_fonts/font = ExtResource("2_wl6k7")
 theme_override_font_sizes/font_size = 30
-text = "World Domination?"
+text = "world domination?"
 
 [node name="pointer" type="Polygon2D" parent="choices" unique_id=292819827]
 position = Vector2(1481, 790)

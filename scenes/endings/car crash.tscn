@@ -7,7 +7,7 @@
 script = ExtResource("1_2pgu2")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["The car rushes by. you both don't have enough time to react", "CRASH! it crashes into you and zooms off", "ENDING: Freedom but at what cost?"]
+text_array = ["the car rushes by so fast that you both don't have enough time to react!", "CRASH! it crashes into both of you and zooms off", "ENDING: freedom but at what cost?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1066600917]
 offset_left = -37.0

@@ -2,6 +2,7 @@ extends Node
 var next_scene_in_queue =  "res://scenes/mainmenu.tscn"
 var next_pause =  "res://scenes/mainmenu.tscn"
 var paused = false
+var from_settings = false
 #stupid other stuff
 var pointer_position = 1
 var normal_type = true
@@ -13,7 +14,6 @@ var visible_characters = null
 var total_type_time = null 
 var urname = "silly kitty"
 var music
-
 #slots
 var freedom = false
 var squished = false
@@ -36,6 +36,5 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if music and !music.playing:
-		print("moosic")
 		music.play()
 	
