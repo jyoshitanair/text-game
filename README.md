@@ -19,7 +19,6 @@
 
 🐱 [Credits](#credits)
 
-🐱 [Screenshots](#screenshots)
 
 
 ## Information
@@ -28,7 +27,7 @@
 
 🐱  **Github Repo:**  https://github.com/jyoshitanair/text-game
 
-🐱  **Itch.io:** 
+🐱  **Itch.io:** https://jyoshitanair.itch.io/cat-mayhem
 
 🐱  **Created by:** jyoshitanair (github)
 
@@ -123,22 +122,5 @@ It is also a visual novel!
 	🐱 Dramatic - Dramatic Music by **The_Mountain** on pixabay : https://pixabay.com/music/epic-classical-dramatic-dramatic-music-508006/
 	
 	🐱 Rock - Rock Music by **alex-morgan** on pixabay : https://pixabay.com/music/rock-rock-rock-music-545492/
-
-## Screenshots
-
----
-
-#### Gameplay/Dialoge
-
-#### Main Menu
-
-#### Settings Menu
-
-#### Loading Page
-
-#### Save Page
-
-#### How to Play Page
-
 
 *Made with 💖 by jyoshita!*
