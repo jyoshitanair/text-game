@@ -5,7 +5,7 @@
 
 [node name="DiedBookshelf" type="Node2D" unique_id=170064609 groups=["ending", "f_endings"]]
 script = ExtResource("1_2fl4m")
-text_array = ["yeah. no.", "that's when the bookshelf nearby crashses ontop of you", "but hey atleast you got your beauty sleep!", "ENDING: crushed Dreams"]
+text_array = ["yeah. no.", "that's when the bookshelf nearby crashses ontop of you", "but hey atleast you got your beauty sleep!", "ENDING: crushed dreams"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=832269571]
 offset_left = -37.0

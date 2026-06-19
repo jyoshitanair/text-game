@@ -7,7 +7,7 @@
 script = ExtResource("1_mkles")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["your eyes widen as the bookself crashes down onto him", "with a splat he's gone.", "ENDING: squished!"]
+text_array = ["your eyes widen as the bookself crashes down onto cat", "with a splat cat's gone.", "ENDING: squished!"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1130208720]
 offset_left = -37.0

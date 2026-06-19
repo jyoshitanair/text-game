@@ -29,3 +29,7 @@ func _on_button_pressed() -> void:
 #submit name
 func _on_button_2_pressed() -> void:
 	Manager.urname = text_edit.text
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	Manager.volume = value

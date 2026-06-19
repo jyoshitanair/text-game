@@ -7,7 +7,7 @@
 script = ExtResource("1_fuoay")
 path1 = "res://scenes/slots.tscn"
 path2 = "res://scenes/slots.tscn"
-text_array = ["i take that back. you're just an annoying, lazy cat!", "always saying no no no! ", "i know you're just trying to annoy me! so fine here's a reaction!", "---", "cat starts to get mad. like REALLY mad.", "he glare at you. soon you are both in a fight!", "MEEEOOWOWWWOWOW"]
+text_array = ["i take that back. you're just an annoying, lazy cat!", "always saying no no no! ", "i know you're just trying to annoy me! so fine here's a reaction!", "---", "cat starts to get mad. like REALLY mad.", "cat glares at you. soon enough you are both in a cat fight!", "MEEEOOWOWWWOWOW"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1550619984]
 offset_left = -37.0
