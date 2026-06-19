@@ -71,10 +71,10 @@ text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 [node name="Label" type="Label" parent="Label" unique_id=2051214793]
 layout_mode = 0
-offset_left = 402.0
-offset_top = -170.0
-offset_right = 1105.0
-offset_bottom = 839.0
+offset_left = 450.0
+offset_top = -192.0
+offset_right = 1153.0
+offset_bottom = 817.0
 theme_override_colors/font_color = Color(1, 1, 1, 0.4627451)
 theme_override_fonts/font = ExtResource("2_e8360")
 theme_override_font_sizes/font_size = 10

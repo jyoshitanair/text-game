@@ -18,10 +18,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label2" type="Label" parent="ColorRect" unique_id=1809294828]
 layout_mode = 0
-offset_left = 79.0
-offset_top = 61.0
-offset_right = 782.0
-offset_bottom = 867.0
+offset_left = 62.0
+offset_top = 14.0
+offset_right = 765.0
+offset_bottom = 820.0
 theme_override_colors/font_color = Color(1, 1, 1, 0.7764706)
 theme_override_fonts/font = ExtResource("2_t1wm5")
 theme_override_font_sizes/font_size = 7
@@ -72,13 +72,13 @@ text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 [node name="Label" type="Label" parent="ColorRect" unique_id=1897503896]
 layout_mode = 0
-offset_left = 593.0
-offset_top = 132.0
-offset_right = 1296.0
-offset_bottom = 1141.0
+offset_left = 619.0
+offset_top = 202.0
+offset_right = 1322.0
+offset_bottom = 1211.0
 theme_override_colors/font_color = Color(1, 1, 1, 0.4627451)
 theme_override_fonts/font = ExtResource("2_t1wm5")
-theme_override_font_sizes/font_size = 14
+theme_override_font_sizes/font_size = 16
 text = "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⢤⣶⣶⣶⣶⣶⣒⣒⣀⣺⣿⣿⠿⢶⣶⣶⣶⣦⣤⣤⣤⣄⣀⣀⣀⣀⡀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠴⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠛⠒⠲⠦⢤⣉⠙⣿⣿⣿⣟⢿⣿⠿⠿⠿⢿⣿
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⣷⡦⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⡇⠀⠈⠛⢿⣿⡀⠀⠀⠀⠻

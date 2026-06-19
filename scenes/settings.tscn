@@ -121,17 +121,17 @@ text = "Ok?
 
 [node name="HSlider" type="HSlider" parent="." unique_id=1153875592]
 offset_left = 92.0
-offset_top = 576.0
+offset_top = 569.0
 offset_right = 511.0
-offset_bottom = 630.0
+offset_bottom = 623.0
 min_value = -30.0
 max_value = 20.0
 
 [node name="Label5" type="Label" parent="." unique_id=1756103816]
 offset_left = 69.0
-offset_top = 524.0
+offset_top = 518.0
 offset_right = 418.0
-offset_bottom = 560.0
+offset_bottom = 554.0
 theme_override_fonts/font = ExtResource("2_f4mfi")
 theme_override_font_sizes/font_size = 26
 text = "Volume!"

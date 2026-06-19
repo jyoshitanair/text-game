@@ -17,10 +17,10 @@ offset_bottom = 700.0
 color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=1075082440]
-offset_left = 2.0
-offset_top = 103.0
-offset_right = 705.0
-offset_bottom = 711.0
+offset_left = 12.0
+offset_top = 181.0
+offset_right = 715.0
+offset_bottom = 789.0
 theme_override_fonts/font = ExtResource("2_fjmhx")
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀

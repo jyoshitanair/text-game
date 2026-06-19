@@ -24,100 +24,100 @@ theme_override_font_sizes/font_size = 42
 text = "Endings Found:"
 
 [node name="freedom" type="Label" parent="." unique_id=651410745]
-offset_left = 56.0
-offset_top = 168.0
+offset_left = 51.0
+offset_top = 198.0
 offset_right = 570.0
-offset_bottom = 282.0
+offset_bottom = 312.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: Freedom but at what cost?"
 
 [node name="squished" type="Label" parent="." unique_id=348399545]
-offset_left = 60.0
-offset_top = 349.0
-offset_right = 574.0
-offset_bottom = 463.0
+offset_left = 55.0
+offset_top = 379.0
+offset_right = 569.0
+offset_bottom = 493.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: squished!"
 
 [node name="safetynet" type="Label" parent="." unique_id=2063880181]
-offset_left = 57.0
-offset_top = 290.0
-offset_right = 571.0
-offset_bottom = 404.0
+offset_left = 52.0
+offset_top = 320.0
+offset_right = 566.0
+offset_bottom = 434.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: A Safety Net?"
 
 [node name="butterfly" type="Label" parent="." unique_id=1358836415]
-offset_left = 644.0
-offset_top = 234.0
-offset_right = 1158.0
-offset_bottom = 348.0
+offset_left = 639.0
+offset_top = 264.0
+offset_right = 1153.0
+offset_bottom = 378.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: Butterflies"
 
 [node name="beaten" type="Label" parent="." unique_id=432769875]
-offset_left = 644.0
-offset_top = 306.0
-offset_right = 1158.0
-offset_bottom = 420.0
+offset_left = 639.0
+offset_top = 336.0
+offset_right = 1153.0
+offset_bottom = 450.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: Beaten and Bruised "
 
 [node name="falldamage" type="Label" parent="." unique_id=1229267227]
-offset_left = 57.0
-offset_top = 232.0
-offset_right = 571.0
-offset_bottom = 346.0
+offset_left = 52.0
+offset_top = 262.0
+offset_right = 566.0
+offset_bottom = 376.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: Died from fall damage"
 
 [node name="food" type="Label" parent="." unique_id=146427563]
-offset_left = 55.0
-offset_top = 416.0
-offset_right = 569.0
-offset_bottom = 530.0
+offset_left = 50.0
+offset_top = 446.0
+offset_right = 564.0
+offset_bottom = 560.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: bonding over food :3"
 
 [node name="soclost" type="Label" parent="." unique_id=1188348434]
-offset_left = 55.0
-offset_top = 482.0
-offset_right = 569.0
-offset_bottom = 596.0
+offset_left = 50.0
+offset_top = 512.0
+offset_right = 564.0
+offset_bottom = 626.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: so close yet so far"
 
 [node name="cold" type="Label" parent="." unique_id=279769748]
-offset_left = 641.0
-offset_top = 172.0
-offset_right = 1155.0
-offset_bottom = 286.0
+offset_left = 636.0
+offset_top = 202.0
+offset_right = 1150.0
+offset_bottom = 316.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: The cold shoulder"
 
 [node name="domination" type="Label" parent="." unique_id=1461465855]
-offset_left = 643.0
-offset_top = 378.0
-offset_right = 1157.0
-offset_bottom = 492.0
+offset_left = 638.0
+offset_top = 408.0
+offset_right = 1152.0
+offset_bottom = 522.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "ENDING: World Domination"
 
 [node name="crushed" type="Label" parent="." unique_id=976134188]
-offset_left = 640.0
-offset_top = 450.0
-offset_right = 1154.0
-offset_bottom = 564.0
+offset_left = 635.0
+offset_top = 480.0
+offset_right = 1149.0
+offset_bottom = 594.0
 theme_override_fonts/font = ExtResource("3_xs8oc")
 theme_override_font_sizes/font_size = 27
 text = "Ending: Crushed Dreams"
@@ -135,3 +135,13 @@ text = "New Game"
 position = Vector2(169, 277)
 color = Color(0.8179707, 0.66060704, 0.22640124, 1)
 polygon = PackedVector2Array(895, 324, 931, 302, 931, 348)
+
+[node name="final" type="Label" parent="." unique_id=1064686117]
+offset_left = 136.0
+offset_top = 125.0
+offset_right = 650.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0.6842168, 0.00042614967, 0.70135766, 1)
+theme_override_fonts/font = ExtResource("3_xs8oc")
+theme_override_font_sizes/font_size = 24
+text = "Found: 0/11 Endings"

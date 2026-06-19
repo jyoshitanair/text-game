@@ -16,10 +16,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label2" type="Label" parent="ColorRect" unique_id=312321904]
 layout_mode = 0
-offset_left = 47.0
-offset_top = 378.0
-offset_right = 750.0
-offset_bottom = 1111.0
+offset_left = 64.0
+offset_top = 399.0
+offset_right = 767.0
+offset_bottom = 1132.0
 theme_override_colors/font_color = Color(1, 1, 1, 0.3764706)
 theme_override_fonts/font = ExtResource("2_ujwl4")
 theme_override_font_sizes/font_size = 13
@@ -41,10 +41,10 @@ text = "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 [node name="Label" type="Label" parent="ColorRect" unique_id=983709047]
 layout_mode = 0
-offset_left = 738.0
-offset_top = 280.0
-offset_right = 1441.0
-offset_bottom = 1289.0
+offset_left = 697.0
+offset_top = 328.0
+offset_right = 1400.0
+offset_bottom = 1337.0
 theme_override_colors/font_color = Color(1, 1, 1, 0.4627451)
 theme_override_fonts/font = ExtResource("2_ujwl4")
 theme_override_font_sizes/font_size = 14

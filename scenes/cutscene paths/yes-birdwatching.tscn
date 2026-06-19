@@ -30,10 +30,10 @@ theme_override_font_sizes/normal_font_size = 35
 text = "meoow..."
 
 [node name="Label" type="Label" parent="." unique_id=28396802]
-offset_left = 3.0
-offset_top = 101.0
-offset_right = 706.0
-offset_bottom = 709.0
+offset_left = 8.0
+offset_top = 185.0
+offset_right = 711.0
+offset_bottom = 793.0
 theme_override_fonts/font = ExtResource("2_k1dwu")
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀

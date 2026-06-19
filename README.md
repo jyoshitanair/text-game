@@ -105,6 +105,7 @@ It is also a visual novel!
 
 🐱 I learned how to finally get arounf ASCII font restrictions using DejaVu Sans as a back up! I didn't know you could do that and it's so helpful!!
 
+🐱 I learned a better randomize method (array shuffling!)
 
 ## Credits
 

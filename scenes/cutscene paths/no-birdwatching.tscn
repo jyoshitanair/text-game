@@ -7,7 +7,7 @@
 script = ExtResource("1_7cr1f")
 path1 = "res://scenes/cutscene paths/sleep-fun.tscn"
 path2 = "res://scenes/cutscene paths/world-domination-fun.tscn"
-text_array = ["what? why WOULDN't you wanna go birdwatching! the patio is soo nice!", "what do you even do for fun then?"]
+text_array = ["what? why WOULDN'T you wanna go birdwatching! the patio is soo nice!", "what do you even do for fun then?"]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1855844131]
 offset_left = -37.0
@@ -18,9 +18,9 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=2060780609]
 offset_left = 3.0
-offset_top = 101.0
+offset_top = 182.0
 offset_right = 706.0
-offset_bottom = 709.0
+offset_bottom = 790.0
 theme_override_fonts/font = ExtResource("2_wl6k7")
 theme_override_font_sizes/font_size = 14
 text = "⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
