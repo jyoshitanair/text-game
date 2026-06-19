@@ -128,17 +128,17 @@ It is also a visual novel!
 
 ---
 
-####Gameplay/Dialoge
+#### Gameplay/Dialoge
 
-####Main Menu
+#### Main Menu
 
-####Settings Menu
+#### Settings Menu
 
-####Loading Page
+#### Loading Page
 
-####Save Page
+#### Save Page
 
-####How to Play Page
+#### How to Play Page
 
 
 *Made with 💖 by jyoshita!*
