@@ -66,7 +66,7 @@ func _ready() -> void:
 		crushed.text = "???"
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("enter"):
 		if Manager.from_settings ==false:
 			Manager.next_scene_in_queue = "res://scenes/mainmenu.tscn"
@@ -75,8 +75,8 @@ func _process(delta: float) -> void:
 			#stupid other stuff
 			Manager.pointer_position = 1
 			Manager.normal_type = true
-			Manager.tween_type
-			Manager.type_finished
+			Manager.tween_type = null
+			Manager.type_finished = null
 			Manager.text_array_index = 0
 			Manager.can_move= false
 			Manager.visible_characters = null 

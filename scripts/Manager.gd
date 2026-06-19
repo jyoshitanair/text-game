@@ -35,7 +35,7 @@ func _ready() -> void:
 	music.stream = preload("res://peakmusic/outlawcreative-you-call-it-chaos-i-call-it-grace-392666.mp3")
 	music.play()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	music.volume_db = volume
 	if music and !music.playing:
 		music.play()

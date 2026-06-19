@@ -19,8 +19,8 @@ var random_array = [
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	randomize()
-	var index = randi_range(0,6)
-	random.text = random_array[index]
+	random_array.shuffle()
+	random.text = random_array[0]
 	var tween = create_tween().set_parallel(true)
 	tween.tween_property(label,"rotation",deg_to_rad(360),2)
 	tween.tween_property(label,"label_settings:font_size",1,2)	

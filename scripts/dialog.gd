@@ -61,7 +61,7 @@ func _ready() -> void:
 		if not ending:
 			choices.show()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("pause"):
 			Manager.next_scene_in_queue = "res://scenes/mainmenu.tscn"
 			Manager.next_pause = scene_file_path
